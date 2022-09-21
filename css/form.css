@@ -1,0 +1,96 @@
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+body {
+	color: #000021;
+	font-size: calc(1em + 1.25vw);
+	background-color: #e6e6ef;
+}
+form {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+form p {
+	font-size: 1.2em;
+}
+.line {
+	border-top: 1px dotted;
+    padding-top: 1em;
+	padding-bottom: 1em;
+}
+.button {
+	margin: 0 auto; 
+	display: -webkit-box;
+	margin-top: 2em;
+}
+label {
+	display: flex;
+	cursor: pointer;
+	font-weight: 500;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 0.375em;
+	padding-top: 10px;
+   /* Accessible outline */
+   /* Remove comment to use */
+   /* &:focus-within {
+		outline: .125em solid $primary-color;
+   }
+	*/
+}
+label input {
+	position: absolute;
+	left: -9999px;
+}
+label input:checked + span {
+	background-color: #d6d6e5;
+	color: #00005c;
+}
+label input:checked + span:before {
+	box-shadow: inset 0 0 0 0.4375em #00005c;
+}
+label span {
+	display: flex;
+	align-items: center;
+	padding: 0.375em 0.75em 0.375em 0.375em;
+	border-radius: 99em;
+	transition: 0.25s ease;
+	padding-top: 0.5em;
+}
+label span:hover {
+	background-color: #d6d6e5;
+	color: #00005c;
+}
+label span:before {
+	display: flex;
+	flex-shrink: 0;
+	content: "";
+	background-color: #fff;
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 50%;
+	margin-right: 0.375em;
+	transition: 0.25s ease;
+	box-shadow: inset 0 0 0 0.125em #00005c;
+}
+
+
+
+  /* Dark mode */
+  @media screen and (prefers-color-scheme: dark) {
+	body {
+	  background: #17181c;
+	  color: #e3e4e8; }
+	input:checked + label,
+	input:checked + label span,
+	.worm__segment:before {
+	  color: #5583f6; } }
+	  
+  .question {
+	  font-size:1.2em;
+	  border-top: 1px;
+	  border-style: dotted;
+	  padding-top: 1em;
+  }
+
