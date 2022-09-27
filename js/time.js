@@ -13,7 +13,7 @@ function livetime() {
     let seconds = date.getSeconds();
     let todayi = date.getDay();
     if (todayi == 0) {
-        todayis.innerHTML = "Chủ nhật";
+        todayis.innerHTML = "CN";
     }
     else if (todayi == 1) {
         todayis.innerHTML = "Thứ 2";
@@ -97,7 +97,7 @@ function weather() {
     const date = new Date();
     var numday = date.getDay();
     if (numday == 0) {
-        numtext.innerHTML = "Chủ nhật";
+        numtext.innerHTML = "CN";
         numtext1.innerHTML = "Thứ 2";
         numtext2.innerHTML = "Thứ 3";
         numtext3.innerHTML = "Thứ 4";
@@ -122,27 +122,27 @@ function weather() {
         numtext1.innerHTML = "Thứ 5";
         numtext2.innerHTML = "Thứ 6";
         numtext3.innerHTML = "Thứ 7";
-        numtext4.innerHTML = "Chủ nhật";
+        numtext4.innerHTML = "CN";
 
     }
     else if (numday == 4) {
         numtext.innerHTML = "Thứ 5";
         numtext1.innerHTML = "Thứ 6";
         numtext2.innerHTML = "Thứ 7";
-        numtext3.innerHTML = "Chủ nhật";
+        numtext3.innerHTML = "CN";
         numtext4.innerHTML = "Thứ 2";
 
     }
     else if (numday == 5) {
         numtext.innerHTML = "Thứ 6";
         numtext1.innerHTML = "Thứ 7";
-        numtext2.innerHTML = "Chủ nhật";
+        numtext2.innerHTML = "CN";
         numtext3.innerHTML = "Thứ 2";
         numtext4.innerHTML = "Thứ 3";
     }
     else if (numday == 6) {
         numtext.innerHTML = "Thứ 7";
-        numtext1.innerHTML = "Chủ nhật";
+        numtext1.innerHTML = "CN";
         numtext2.innerHTML = "Thứ 2";
         numtext3.innerHTML = "Thứ 3";
         numtext4.innerHTML = "Thứ 4";
