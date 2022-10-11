@@ -57,11 +57,13 @@ function sunmoon() {
         document.querySelector('.moon').style.display = 'inline';
         document.querySelector('.sun').style.display = 'none';
         document.querySelector('.dark-mode-slide-btn').click();
+        console.log('>19');
     }
-    else if (hours >= 00 || hours <= 6){
+    else if (hours >= 00 && hours <= 6){
         document.querySelector('.moon').style.display = 'inline';
         document.querySelector('.sun').style.display = 'none';
         document.querySelector('.dark-mode-slide-btn').click();
+        console.log('>0');
     }
     else {
         document.querySelector('.moon').style.display = 'none';

@@ -1,3 +1,15 @@
+function modalregis() {
+    let cl = document.getElementById("popup");
+    let hide = document.getElementById("exit");
+    let popup = document.getElementById("modal");
+
+	popup.style.display = "block";
+    
+	hide.addEventListener("click", function() {
+		popup.style.display = "none";
+	})
+}
+
 function Send() {
     let result1 = document.querySelector('.inp:checked').value;
     let result2 = document.querySelector('.inp2:checked').value;
@@ -5,6 +17,8 @@ function Send() {
     let result4 = document.querySelector('.inp4:checked').value;
     let result5 = document.querySelector('.inp5:checked').value;
     let result6 = document.querySelector('.inp6:checked').value;
+
+
     let data = {    
         'entry.1710507412': result1,
         'entry.1082734637': result2,
@@ -20,7 +34,8 @@ function Send() {
        xhr.open("POST", 'https://docs.google.com/forms/d/e/1FAIpQLSciiLOdIRudNyArrwSwnMgETL6yhaHZXZ5w2v8clHJLWb7dow/formResponse', true);
        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
        xhr.send(queryString);
-       alert('Gửi khảo sát thành công !')
+
+        modalregis();
 }
 
 function sub() {
