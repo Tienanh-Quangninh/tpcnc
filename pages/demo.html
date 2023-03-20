@@ -1,56 +1,2272 @@
-<button id="popup-btn"> Liên hệ </button>
-<div class="popup">
-<div class="popup-content">
-<span class="close-btn">&times;</span>
-<p>Bạn cần tư vấn hãy liên hệ với chúng tôi</p>
-</div>
-</div>
+<!DOCTYPE html>
+<html lang="en-US">
 
-<style>
-	.popup {
-display: none;
-position: fixed;
-padding-top: 50px;
-left: 0;
-top: 0;
-width: 100%;
-height: 100%;
-background-color: rgb(0, 0, 0);
-background-color: rgba(0, 0, 0, 0.5);
-}
-.popup-content {
-position: relative;
-background-color: #FAFAFA;
-padding: 15px;
-margin: auto;
-width: 70%;
-}
-.close-btn {
-float: right;
-color: #2E2E2E;
-font-size: 25px;
-font-weight: 700;
-}
-.close-btn:hover {
-color: #D2D2D2;
-}
-</style>
-<script>
-	let modalBtn = document.getElementById("popup-btn");
-	let modal = document.querySelector(".popup");
-	let closeBtn = document.querySelector(".close-btn");
-	// Hiển thị popup khi nhấp chuột vào button
-	modalBtn.onclick = function(){
-	modal.style.display = "block"
-	}
-	// Đóng popup khi ấn vào nút đóng
-	closeBtn.onclick = function(){
-	modal.style.display = "none"
-	}
-	// Đóng khi nhấp chuột vào bất cứ khu vực nào trên màn hình
-	window.onclick = function(e){
-	if(e.target == modal){
-	modal.style.display = "none"
-	}
-	}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="shortcut icon" href="/images/logo_hv.png">
+    <title>Bản tin Tội phạm Công nghệ cao</title>
+    <meta property="og:type" content= "website" />
+    <meta property="og:title" content="Tin tức Tội phạm Công nghệ cao" />
+    <meta property="og:url" content="https://toiphamcnc.vn/" />
+    <meta property="og:site_name" content="Tin tức Tội phạm Công nghệ cao" />
+    <meta property="og:description" content="Bản tin cập nhật tin tức về tội phạm sử dụng Công nghệ cao" />   
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="/images/Dac-diem-cua-toi-pham-cong-nghe-cao-theo-quy-dinh-moi.jpg" />
+    <meta name='robots' content='max-image-preview:large' />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" id="rb-preload-gfonts"
+        href="https://fonts.googleapis.com/css?family=Work+Sans%3A400%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2C400italic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%2C300%7CBitter%3A700%2C600%2C900%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=swap"
+        crossorigin><noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Work+Sans%3A400%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2C400italic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%2C300%7CBitter%3A700%2C600%2C900%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=swap">
+    </noscript>
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <link rel="alternate" type="application/rss+xml" title="Tin tức Tội phạm Công nghệ cao" href="/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="Bình luận - Tin tức Tội phạm Công nghệ cao"
+        href="/comments/feed/" />
+    <meta name="description" content="Foxiz Theme Demos">
+    <script
+        type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","legalName":"Tin tức Tội phạm Công nghệ cao"","url":"https://toiphamcnc.vn/"}</script>
+    <script>
+        window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\images\/core\/emoji\/14.0.0\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\images\/core\/emoji\/14.0.0\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "https:\/\/toiphamcncvn.themeruby.com\/news\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0.2" } };
+        /*! This file is auto-generated */
+        !function (e, a, t) { var n, r, o, i = a.createElement("canvas"), p = i.getContext && i.getContext("2d"); function s(e, t) { var a = String.fromCharCode, e = (p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, e), 0, 0), i.toDataURL()); return p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, t), 0, 0), e === i.toDataURL() } function c(e) { var t = a.createElement("script"); t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t) } for (o = Array("flag", "emoji"), t.supports = { everything: !0, everythingExceptFlag: !0 }, r = 0; r < o.length; r++)t.supports[o[r]] = function (e) { if (!p || !p.fillText) return !1; switch (p.textBaseline = "top", p.font = "600 32px Arial", e) { case "flag": return s([127987, 65039, 8205, 9895, 65039], [127987, 65039, 8203, 9895, 65039]) ? !1 : !s([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819]) && !s([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]); case "emoji": return !s([129777, 127995, 8205, 129778, 127999], [129777, 127995, 8203, 129778, 127999]) }return !1 }(o[r]), t.supports.everything = t.supports.everything && t.supports[o[r]], "flag" !== o[r] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]); t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback = function () { t.DOMReady = !0 }, t.supports.everything || (n = function () { t.readyCallback() }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function () { "complete" === a.readyState && t.readyCallback() })), (e = t.source || {}).concatemoji ? c(e.concatemoji) : e.wpemoji && e.twemoji && (c(e.twemoji), c(e.wpemoji))) }(window, document, window._wpemojiSettings);
+    </script>
+    <link rel='stylesheet' id='elementor-post-7-css'
+        href='/css/autoptimize_single_52ffa62821626b551c788cdd94527722.css'
+        media='all' />
+    <link rel='stylesheet' id='elementor-post-1387-css'
+        href='/css/autoptimize_single_d6669ed7d63be9c4c7dc538576d8a6bc.css?ver=1660027686'
+        media='all' />
+    <link rel='stylesheet' id='elementor-post-1714-css'
+        href='/css/autoptimize_single_9bf2d809310d912d016a1e78517d7304.css?ver=1649395625'
+        media='all' />
+    <link rel='stylesheet' id='' href='/css/form.css' media='all' />
+	<link rel='stylesheet' id='' href='/css/main.css' media='all' />
+
+    <style id='foxiz-style-inline-css'>
+    </style>
+    <script src='/js/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+    <link rel="canonical" href="https://toiphamcnc.vn/" />
+    <link rel='shortlink' href='https://toiphamcnc.vn/' />
+    <script
+        type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://toiphamcnc.vn/#website","url":"https://toiphamcnc.vn/","name":"Tin túc Tội phạm Công nghệ cao","potentialAction":{"@type":"SearchAction","target":"https://toiphamcnc.vn?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YV5C7NT6Y5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-YV5C7NT6Y5');
+    </script>
+</head>
+
+<body onload="auto()"
+    class="home page-template-default page page-id-1387 wp-embed-responsive elementor-default elementor-kit-7 elementor-page elementor-page-1387 menu-ani-1 hover-ani-1 wc-res-list is-hd-5 is-backtop is-mstick is-smart-sticky top-spacing sync-bookmarks"
+    data-theme="default">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg>
+    <div class="site-outer">
+        <header id="site-header"
+            class="header-wrap rb-section header-5 header-fw style-tb-shadow-border has-quick-menu">
+            <aside id="rb-privacy" class="privacy-bar privacy-left">
+                <div class="privacy-inner">
+                    <div class="privacy-content">By using this site, you agree to the <a href="#">Privacy Policy</a> and
+                        <a href="#">Terms of Use</a>.</div>
+                    <div class="privacy-dismiss"><a id="privacy-trigger" href="#"
+                            class="privacy-dismiss-btn is-btn"><span>Accept</span></a></div>
+                </div>
+            </aside>
+            <div class="logo-sec">
+                <div class="logo-sec-inner rb-container edge-padding">
+                    <div class="logo-sec-left">
+                        <div class="wnav-holder widget-h-login header-dropdown-outer">
+                            <a href="#"
+                                class="" data-title="Sign In"><span
+                                    class="login-icon-svg"></span></a>
+									<!-- <a href="#"
+									class="login-toggle is-login header-element" data-title="Sign In"><span
+										class="login-icon-svg"></span></a> -->
+                        </div>
+                        <div class="header-social-list wnav-holder"><a class="social-link-facebook"
+                                data-title="Facebook" href="#" target="_blank" rel="noopener nofollow"><i
+                                    class="rbi rbi-facebook"></i></a><a
+                                class="social-link-youtube" data-title="YouTube" href="#" target="_blank"
+                                rel="noopener nofollow"><i class="rbi rbi-youtube"></i></a></div>
+                    </div>
+                    <div class="logo-sec-center">
+                        <div class="logo-wrap is-image-logo site-branding">
+                            <a href="/" class="logo" title="Tin tức Tội phạm Công nghệ Cao">
+                                <img class="logo-default" data-mode="default" height="100" width="292"
+                                    src="/images/feverlogo_black.png"
+                                    srcset="/images/feverlogo_black.png 1x,/images/feverlogo_black.png 2x"
+                                    alt="Tin tức Tội phạm Công nghệ cao"><img class="logo-dark" data-mode="dark" height="100" width="292"
+                                    src="/images/feverlogo_light.png"
+                                    srcset="/images/feverlogo_light.png 1x,/images/feverlogo_light.png 2x"
+                                    alt="Tin tức Tội phạm Công nghệ cao">
+                                <h1 class="logo-title hidden">Standard News</h1>
+                               
+                            </a>
+                        </div>
+                    </div>
+					<div class="logo-sec-right">
+						<div class="navbar-right">
+							<div class="wnav-holder header-dropdown-outer">
+                                <div class="wnav-holder font-resizer" style="margin-right: 8px;">
+                                    <img src="/images/sun.png" class="sun">
+                                    <img src="/images/moon.png" class="moon">
+                                    <span class="livetime" id="livetime"></span><span style="display:none"id="todayis"></span>
+                                </div>
+								<a href="#" class="dropdown-trigger notification-icon" data-notification="1143">
+									<span class="notification-icon-inner" data-title="Notification">
+										<span class="notification-icon-svg"></span>
+										<span class="notification-info"></span>
+									</span>
+								</a>
+								<div class="header-dropdown notification-dropdown">
+									<div class="notification-popup">
+										<div class="notification-header">
+											<span class="h4">Notification</span>
+											<a class="notification-url meta-text"
+												href="#">Show More
+												<i class="rbi rbi-cright"></i></a>
+										</div>
+										<div class="notification-content">
+											<div class="scroll-holder">
+												<div class="notification-bookmark"></div>
+												<div class="notification-latest">
+													<span class="h5 notification-content-title"><i
+															class="rbi rbi-clock"></i>Latest News</span>
+													<div id="uid_notification"
+														class="block-wrap block-small block-list block-list-small-2 short-pagination rb-columns rb-col-1 p-middle">
+														<div class="block-inner">
+															<div class="p-wrap p-small p-list-small-2" data-pid="1350">
+																<div class="feat-holder">
+																	<div class="p-featured ratio-v1">
+																		<a class="p-flink"
+																			href="#"
+																			title="How to Take the Perfect Instagram Selfie: Dos &amp; Don&#8217;ts">
+																			<img width="150" height="150"
+																				src="#"
+																				class="featured-img wp-post-image"
+																				alt="" loading="lazy" /> </a>
+																	</div>
+																</div>
+																<div class="p-content">
+																	<h5 class="entry-title"> <a class="p-url"
+																			href="#"
+																			rel="bookmark">How to Take the Perfect
+																			Instagram Selfie: Dos &amp; Don&#8217;ts</a>
+																	</h5>
+																	<div class="p-meta">
+																		<div class="meta-inner is-meta">
+																			<span
+																				class="meta-el meta-category meta-bold">
+																				<i class="rbi rbi-archive"></i> <a
+																					class="category-13"
+																					href="#">Technology</a>
+																			</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="p-wrap p-small p-list-small-2" data-pid="237">
+																<div class="feat-holder">
+																	<div class="p-featured ratio-v1">
+																		<a class="p-flink"
+																			href="#"
+																			title="The Best Islands for Beaches, From Aruba to the Baltics">
+																			<img width="150" height="150"
+																				src="#"
+																				class="featured-img wp-post-image"
+																				alt="" loading="lazy" /> </a>
+																	</div>
+																</div>
+																<div class="p-content">
+																	<h5 class="entry-title"> <a class="p-url"
+																			href="#"
+																			rel="bookmark">The Best Islands for Beaches,
+																			From Aruba to the Baltics</a></h5>
+																	<div class="p-meta">
+																		<div class="meta-inner is-meta">
+																			<span
+																				class="meta-el meta-category meta-bold">
+																				<i class="rbi rbi-archive"></i> <a
+																					class="category-14"
+																					href="#">The
+																					Escapist</a>
+																			</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="p-wrap p-small p-list-small-2" data-pid="228">
+																<div class="feat-holder">
+																	<div class="p-featured ratio-v1">
+																		<a class="p-flink"
+																			href="#"
+																			title="9 Awesome Destinations for Solo Female Travelers">
+																			<img width="150" height="150"
+																				src="#"
+																				class="featured-img wp-post-image"
+																				alt="" loading="lazy" /> </a>
+																	</div>
+																</div>
+																<div class="p-content">
+																	<h5 class="entry-title"> <a class="p-url"
+																			href="#"
+																			rel="bookmark">9 Awesome Destinations for
+																			Solo Female Travelers</a></h5>
+																	<div class="p-meta">
+																		<div class="meta-inner is-meta">
+																			<span
+																				class="meta-el meta-category meta-bold">
+																				<i class="rbi rbi-archive"></i> <a
+																					class="category-14"
+																					href="#">The
+																					Escapist</a>
+																			</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="p-wrap p-small p-list-small-2" data-pid="1025">
+																<div class="feat-holder">
+																	<div class="p-featured ratio-v1">
+																		<a class="p-flink"
+																			href="#"
+																			title="How Fashion Insiders Are Dressing for New York Fashion Week">
+																			<img width="150" height="150"
+																				src="#"
+																				class="featured-img wp-post-image"
+																				alt="" loading="lazy" /> </a>
+																	</div>
+																</div>
+																<div class="p-content">
+																	<h5 class="entry-title"> <a class="p-url"
+																			href="#
+																			rel="bookmark">How Fashion Insiders Are
+																			Dressing for New York Fashion Week</a></h5>
+																	<div class="p-meta">
+																		<div class="meta-inner is-meta">
+																			<span
+																				class="meta-el meta-category meta-bold">
+																				<i class="rbi rbi-archive"></i> <a
+																					class="category-6"
+																					href="#">Insider</a>
+																			</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="p-wrap p-small p-list-small-2" data-pid="981">
+																<div class="feat-holder">
+																	<div class="p-featured ratio-v1">
+																		<a class="p-flink"
+																			href="#"
+																			title="18 Top Fall Fashion Trends from New York Fashion">
+																			<img width="150" height="150"
+																				src="#"
+																				class="featured-img wp-post-image"
+																				alt="" loading="lazy" /> </a>
+																	</div>
+																</div>
+																<div class="p-content">
+																	<h5 class="entry-title"> <a class="p-url"
+																			href="#"
+																			rel="bookmark">18 Top Fall Fashion Trends
+																			from New York Fashion</a></h5>
+																	<div class="p-meta">
+																		<div class="meta-inner is-meta">
+																			<span
+																				class="meta-el meta-category meta-bold">
+																				<i class="rbi rbi-archive"></i> <a
+																					class="category-6"
+																					href="#">Insider</a>
+																			</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="pagination-wrap pagination-infinite">
+															<div class="infinite-trigger"><i class="rb-loader"></i>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="wnav-holder w-header-search header-dropdown-outer">
+								<a href="#" data-title="Search"
+									class="icon-holder header-element search-btn search-trigger">
+									<span class="search-icon-svg"></span> </a>
+								<div class="header-dropdown">
+									<div class="header-search-form live-search-form">
+										<form method="get" action="/"
+											class="rb-search-form">
+											<div class="search-form-inner">
+												<span class="search-icon"><span class="search-icon-svg"></span></span>
+												<span class="search-text"><input type="text" class="field"
+														placeholder="Nhập từ khóa cần tìm" value=""
+														name="s" /></span>
+												<span class="rb-search-submit"><input type="submit" value="Tìm kiếm" /> <i
+														class="rbi rbi-cright"></i></span>
+											</div>
+										</form>
+										<span class="live-search-animation rb-loader"></span>
+										<div class="live-search-response"></div>
+									</div>
+								</div>
+							</div>
+							<div class="wnav-holder font-resizer">
+								<a href="#" class="font-resizer-trigger" data-title="Resizer"><strong>Aa</strong></a>
+							</div>
+							<div class="dark-mode-toggle-wrap">
+								<div class="dark-mode-toggle">
+									<span class="dark-mode-slide">
+										<i class="dark-mode-slide-btn mode-icon-dark" data-title="Switch to Light"><svg
+												class="svg-icon svg-mode-dark" aria-hidden="true" role="img"
+												focusable="false" xmlns="http://www.w3.org/2000/svg"
+												viewBox="0 0 512 512">
+												<path fill="currentColor" d="M507.681,209.011c-1.297-6.991-7.324-12.111-14.433-12.262c-7.104-0.122-13.347,4.711-14.936,11.643
+ c-15.26,66.497-73.643,112.94-141.978,112.94c-80.321,0-145.667-65.346-145.667-145.666c0-68.335,46.443-126.718,112.942-141.976
+ c6.93-1.59,11.791-7.826,11.643-14.934c-0.149-7.108-5.269-13.136-12.259-14.434C287.546,1.454,271.735,0,256,0
+ C187.62,0,123.333,26.629,74.98,74.981C26.628,123.333,0,187.62,0,256s26.628,132.667,74.98,181.019
+ C123.333,485.371,187.62,512,256,512s132.667-26.629,181.02-74.981C485.372,388.667,512,324.38,512,256
+ C512,240.278,510.546,224.469,507.681,209.011z" />
+											</svg></i>
+										<i class="dark-mode-slide-btn mode-icon-default"
+											data-title="Switch to Dark"><svg class="svg-icon svg-mode-light"
+												aria-hidden="true" role="img" focusable="false"
+												xmlns="http://www.w3.org/2000/svg" viewBox="0 0 232.447 232.447">
+												<path fill="currentColor" d="M116.211,194.8c-4.143,0-7.5,3.357-7.5,7.5v22.643c0,4.143,3.357,7.5,7.5,7.5s7.5-3.357,7.5-7.5V202.3
+ C123.711,198.157,120.354,194.8,116.211,194.8z" />
+												<path fill="currentColor" d="M116.211,37.645c4.143,0,7.5-3.357,7.5-7.5V7.505c0-4.143-3.357-7.5-7.5-7.5s-7.5,3.357-7.5,7.5v22.641
+ C108.711,34.288,112.068,37.645,116.211,37.645z" />
+												<path fill="currentColor" d="M50.054,171.78l-16.016,16.008c-2.93,2.929-2.931,7.677-0.003,10.606c1.465,1.466,3.385,2.198,5.305,2.198
+ c1.919,0,3.838-0.731,5.302-2.195l16.016-16.008c2.93-2.929,2.931-7.677,0.003-10.606C57.731,168.852,52.982,168.851,50.054,171.78
+ z" />
+												<path fill="currentColor" d="M177.083,62.852c1.919,0,3.838-0.731,5.302-2.195L198.4,44.649c2.93-2.929,2.931-7.677,0.003-10.606
+ c-2.93-2.932-7.679-2.931-10.607-0.003l-16.016,16.008c-2.93,2.929-2.931,7.677-0.003,10.607
+ C173.243,62.12,175.163,62.852,177.083,62.852z" />
+												<path fill="currentColor" d="M37.645,116.224c0-4.143-3.357-7.5-7.5-7.5H7.5c-4.143,0-7.5,3.357-7.5,7.5s3.357,7.5,7.5,7.5h22.645
+ C34.287,123.724,37.645,120.366,37.645,116.224z" />
+												<path fill="currentColor" d="M224.947,108.724h-22.652c-4.143,0-7.5,3.357-7.5,7.5s3.357,7.5,7.5,7.5h22.652c4.143,0,7.5-3.357,7.5-7.5
+ S229.09,108.724,224.947,108.724z" />
+												<path fill="currentColor" d="M50.052,60.655c1.465,1.465,3.384,2.197,5.304,2.197c1.919,0,3.839-0.732,5.303-2.196c2.93-2.929,2.93-7.678,0.001-10.606
+ L44.652,34.042c-2.93-2.93-7.679-2.929-10.606-0.001c-2.93,2.929-2.93,7.678-0.001,10.606L50.052,60.655z" />
+												<path fill="currentColor"
+													d="M182.395,171.782c-2.93-2.929-7.679-2.93-10.606-0.001c-2.93,2.929-2.93,7.678-0.001,10.607l16.007,16.008
+ c1.465,1.465,3.384,2.197,5.304,2.197c1.919,0,3.839-0.732,5.303-2.196c2.93-2.929,2.93-7.678,0.001-10.607L182.395,171.782z" />
+												<path fill="currentColor" d="M116.22,48.7c-37.232,0-67.523,30.291-67.523,67.523s30.291,67.523,67.523,67.523s67.522-30.291,67.522-67.523
+ S153.452,48.7,116.22,48.7z M116.22,168.747c-28.962,0-52.523-23.561-52.523-52.523S87.258,63.7,116.22,63.7
+ c28.961,0,52.522,23.562,52.522,52.523S145.181,168.747,116.22,168.747z" />
+											</svg></i>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="navbar-outer" class="navbar-outer">
+				<div id="sticky-holder" class="sticky-holder">
+					<div class="navbar-wrap">
+						<div class="rb-container edge-padding">
+							<div class="navbar-inner">
+								<div class="navbar-center">
+									<nav id="site-navigation" class="main-menu-wrap" aria-label="main menu">
+										<ul id="menu-main" class="main-menu rb-menu large-menu" itemscope
+											itemtype="https://www.schema.org/SiteNavigationElement">
+											<li id="menu-item-1655"
+												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children menu-item-1655">
+												<a href="/"><span>Trang chủ</span></a>
+												
+											</li>
+											<li id="menu-item-1578"
+												class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1578 menu-item-has-children menu-has-child-mega is-child-wide mega-hierarchical">
+												<a href="#"><span>Tin tức</span></a>
+												<div class="mega-dropdown is-mega-category">
+													<div class="rb-container edge-padding">
+														<div class="mega-dropdown-inner">
+															<div class="mega-col mega-col-intro">
+																<div class="h3"><a class="p-url"
+																		href="#">Tin tức</a></div>
+																<div class="category-hero-wrap">
+																	<div class="category-hero-item">
+																		<div class="category-hero-item-inner"><img
+																				src="/images/chi-n.t.h-trinh-bao-tai-phong-an-ninh-mang-va-pctp-su-dung-cong-nghe-cao.jpg"
+																				alt=""></div>
+																	</div>
+																	<div class="category-hero-item">
+																		<div class="category-hero-item-inner"><img
+																				src="/images/chi-n.t.h-trinh-bao-tai-phong-an-ninh-mang-va-pctp-su-dung-cong-nghe-cao.jpg"
+																				alt=""></div>
+																	</div>
+																</div>
+																<div class="cbox-description">Hướng dẫn người dân cách xử lý khi bị nhắn tin, gọi điện “khủng bố” đòi nợ dù không vay tiền.</div><a class="mega-link p-readmore"
+																	href="#"><span>Show
+																		More</span><i class="rbi rbi-cright"></i></a>
+															</div>
+															<div class="mega-col mega-col-trending">
+																<div class="mega-header"><i
+																		class="rbi rbi-trending"></i><span
+																		class="h4">Tin tức nổi bật</span></div>
+																<div id="mega-listing-trending-1578"
+																	class="block-wrap block-small block-list block-list-small-2 rb-columns rb-col-1">
+																	<div class="block-inner">
+																		<div class="p-wrap p-small p-list-small-2"
+																			data-pid="56">
+																			<div class="feat-holder">
+																				<div class="p-featured ratio-v1">
+																					<a class="p-flink"
+																						href="/images/nanhan.jpeg"
+																						title="Cảnh báo tội phạm giả danh chuyên gia chứng khoán để lừa đảo, chiếm đoạt tài sản">
+																						<img width="150" height="150"
+																							src="/images/nanhan.jpeg"
+																							class="featured-img wp-post-image"
+																							alt="" loading="lazy" />
+																					</a>
+																				</div>
+																			</div>
+																			<div class="p-content">
+																				<span
+																					class="entry-title h4 is-p-protected">
+																					<a class="p-url"
+																						href="#"
+																						rel="bookmark">Cảnh báo tội phạm giả danh chuyên gia chứng khoán để lừa đảo, chiếm đoạt tài sản</a></span>
+																				<div class="p-meta">
+																					<div class="meta-inner is-meta">
+																						<span class="meta-el meta-date">
+																							<time class="date published"
+																								datetime="2021-08-29T09:54:28+00:00">21/09/2022</time>
+																						</span>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="p-wrap p-small p-list-small-2"
+																			data-pid="14">
+																			<div class="feat-holder">
+																				<div class="p-featured ratio-v1">
+																					<a class="p-flink"
+																						href="/images/new1.png"
+																						title="White House Reminds Lawmakers not to Travel to Afghanistan">
+																						<img width="150" height="150"
+																							src="/images/new1.png"
+																							class="featured-img wp-post-image"
+																							alt="" loading="lazy" />
+																					</a>
+																				</div>
+																			</div>
+																			<div class="p-content">
+																				<span class="entry-title h4"> <a
+																						class="p-url"
+																						href="#"
+																						rel="bookmark">Khuyến cáo người dân về chiêu lừa tuyển cộng tác viên xử lý đơn hàng online</a></span>
+																				<div class="p-meta">
+																					<div class="meta-inner is-meta">
+																						<span class="meta-el meta-date">
+																							<time class="date published"
+																								datetime="2021-08-28T09:00:57+00:00">21/09/2022</time>
+																						</span>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="p-wrap p-small p-list-small-2"
+																			data-pid="23">
+																			<div class="feat-holder">
+																				<div class="p-featured ratio-v1">
+																					<a class="p-flink"
+																						href="#"
+																						title="Hải Phòng: Phát hiện vụ mua bán thiết bị công nghệ cao để gian lận thi cử">
+																						<img width="150" height="150"
+																							src="/images/sequence-0200_14_07_18still009-37a76d4326b8428bb70b1210fe0a13e7.jpg"
+																							class="featured-img wp-post-image"
+																							alt="" loading="lazy" />
+																					</a>
+																				</div>
+																			</div>
+																			<div class="p-content">
+																				<span class="entry-title h4"> <a
+																						class="p-url"
+																						href="#"
+																						rel="bookmark">Hải Phòng: Phát hiện vụ mua bán thiết bị công nghệ cao để gian lận thi cử</a></span>
+																				<div class="p-meta">
+																					<div class="meta-inner is-meta">
+																						<span class="meta-el meta-date">
+																							<time class="date published"
+																								datetime="2021-08-28T09:05:46+00:00">21/09/2022</time>
+																						</span>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="mega-col mega-col-latest">
+																<div class="mega-header"><i
+																		class="rbi rbi-clock"></i><span
+																		class="h4">Tin tức vừa đăng</span></div>
+																<div id="mega-listing-latest-1578"
+																	class="block-wrap block-small block-list block-list-small-1 bottom-border is-b-border-gray no-last-bb">
+																	<div class="block-inner">
+																		<div class="p-wrap p-small p-list-small-1"
+																			data-pid="56">
+																			<div class="p-content">
+																				<span
+																					class="entry-title h4 is-p-protected">
+																					<a class="p-url"
+																						href="#"
+																						rel="bookmark">Cảnh giác với chiêu lừa sửa ảnh giao dịch ngân hàng để lừa đảo chiếm đoạt tài sản</a></span>
+																				<div class="p-meta">
+																					<div class="meta-inner is-meta">
+																						<span class="meta-el meta-date">
+																							<time class="date published"
+																								datetime="2021-08-29T09:54:28+00:00">21/09/2022</time>
+																						</span>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="p-wrap p-small p-list-small-1"
+																			data-pid="199">
+																			<div class="p-content">
+																				<span class="entry-title h4"> <a
+																						class="p-url"
+																						href="#"
+																						rel="bookmark">Cảnh báo hệ lụy xấu từ các trang web tổ chức đánh bạc và đánh bạc trên không gian mạng</a></span>
+																				<div class="p-meta">
+																					<div class="meta-inner is-meta">
+																						<span class="meta-el meta-date">
+																							<time class="date published"
+																								datetime="2021-08-29T08:39:15+00:00">21/09/2022</time>
+																						</span>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="p-wrap p-small p-list-small-1"
+																			data-pid="216">
+																			<div class="p-content">
+																				<span class="entry-title h4"> <a
+																						class="p-url"
+																						href="#"
+																						rel="bookmark">Cảnh giác với hành vi thu thập, mua bán trái phép thông tin cá nhân</a></span>
+																				<div class="p-meta">
+																					<div class="meta-inner is-meta">
+																						<span class="meta-el meta-date">
+																							<time class="date published"
+																								datetime="2021-08-28T10:41:24+00:00">21/09/2022</time>
+																						</span>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="p-wrap p-small p-list-small-1"
+																			data-pid="43">
+																			<div class="p-content">
+																				<span class="entry-title h4"> <a
+																						class="p-url"
+																						href="#"
+																						rel="bookmark">Cảnh báo hoạt động giả mạo website của Bộ Công an để lừa đảo, chiếm đoạt tài sản</a></span>
+																				<div class="p-meta">
+																					<div class="meta-inner is-meta">
+																						<span class="meta-el meta-date">
+																							<time class="date published"
+																								datetime="2021-08-28T09:35:30+00:00">21/09/2022</time>
+																						</span>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li id="menu-item-1577"
+												class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-1577 menu-item-has-children menu-has-child-mega is-child-wide">
+												<a
+													href="#"><span>Vụ án nổi bật</span></a>
+												<div class="mega-dropdown is-mega-category">
+													<div class="rb-container edge-padding">
+														<div class="mega-dropdown-inner">
+															<div class="mega-header mega-header-fw"><span
+																	class="h4">Vụ án nổi bật</span><a
+																	class="mega-link is-meta"
+																	href="#"><span>Show
+																		More</span><i class="rbi rbi-cright"></i></a>
+															</div>
+															<div id="mega-listing-1577"
+																class="block-wrap block-small block-grid block-grid-small-1 rb-columns rb-col-5 is-gap-10">
+																<div class="block-inner">
+																	<div class="p-wrap p-grid p-grid-small-1"
+																		data-pid="1350">
+																		<div class="feat-holder">
+																			<div class="p-featured">
+																				<a class="p-flink"
+																					href="#"
+																					title="How to Take the Perfect Instagram Selfie: Dos &amp; Don&#8217;ts">
+																					<img width="330" height="220"
+																						src="/images/danh-bac-1-4314.jpg"
+																						class="featured-img wp-post-image"
+																						alt="" loading="lazy" /> </a>
+																			</div>
+																		</div>
+																		<div class="p-content">
+																			<span class="entry-title h4"> <a
+																					class="p-url"
+																					href="#"
+																					rel="bookmark">Bộ Công an triệt phá đường dây lô đề liên tỉnh sử dụng công nghệ cao</a></span>
+																			<div class="p-meta has-bookmark">
+																				<div class="meta-inner is-meta">
+																					<span class="meta-el meta-date">
+																						<time class="date published"
+																							datetime="2021-10-01T13:21:00+00:00">21/09/2022</time>
+																					</span>
+																				</div>
+																				<span
+																					class="rb-bookmark bookmark-trigger"
+																					data-pid="1350"><i
+																						data-title="Save it"
+																						class="rbi rbi-bookmark"></i><i
+																						data-title="Remove"
+																						class="bookmarked-icon rbi rbi-bookmark-fill"></i></span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="p-wrap p-grid p-grid-small-1"
+																		data-pid="1079">
+																		<div class="feat-holder">
+																			<div class="p-featured">
+																				<a class="p-flink"
+																					href="#"
+																					title="Apple iMac M1 Review: the All-In-One for Almost Everyone">
+																					<img width="330" height="220"
+																						src="/images/danhbac.jpg"
+																						class="featured-img wp-post-image"
+																						alt="" loading="lazy" /> </a>
+																			</div>
+																		</div>
+																		<div class="p-content">
+																			<span class="entry-title h4"> <a
+																					class="p-url"
+																					href="#"
+																					rel="bookmark">Triệt phá thêm đường dây đánh bạc do Phan Sào Nam cầm đầu</a></span>
+																			<div
+																				class="review-meta is-meta type-score has-bookmark">
+																				<div class="review-meta-inner"><span
+																						class="rline-wrap"><span
+																							class="rline activated"></span><span
+																							class="rline activated"></span><span
+																							class="rline activated"></span><span
+																							class="rline activated"></span><span
+																							class="rline activated"></span></span><span
+																						class="review-description"><strong
+																							class="meta-bold">9.4</strong>
+																						/10</span></div><span
+																					class="rb-bookmark bookmark-trigger"
+																					data-pid="1079"><i
+																						data-title="Save it"
+																						class="rbi rbi-bookmark"></i><i
+																						data-title="Remove"
+																						class="bookmarked-icon rbi rbi-bookmark-fill"></i></span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="p-wrap p-grid p-grid-small-1"
+																		data-pid="163">
+																		<div class="feat-holder">
+																			<div class="p-featured">
+																				<a class="p-flink"
+																					href="#"
+																					title="Google&#8217;s Self-Designed Tensor Chips will Power Its Next">
+																					<img width="330" height="220"
+																						src="/images/015-5.jpg"
+																						class="featured-img wp-post-image"
+																						alt="" loading="lazy" /> </a>
+																			</div>
+																		</div>
+																		<div class="p-content">
+																			<span class="entry-title h4"> <a
+																					class="p-url"
+																					href="#"
+																					rel="bookmark">Triệt phá đường dây đánh bạc công nghệ cao với số tiền trên 1,5 tỉ đồng/ngày</a></span>
+																			<div class="p-meta has-bookmark">
+																				<div class="meta-inner is-meta">
+																					<span class="meta-el meta-date">
+																						<time class="date published"
+																							datetime="2021-09-08T08:01:50+00:00">21/09/2022</time>
+																					</span>
+																				</div>
+																				<span
+																					class="rb-bookmark bookmark-trigger"
+																					data-pid="163"><i
+																						data-title="Save it"
+																						class="rbi rbi-bookmark"></i><i
+																						data-title="Remove"
+																						class="bookmarked-icon rbi rbi-bookmark-fill"></i></span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="p-wrap p-grid p-grid-small-1"
+																		data-pid="155">
+																		<div class="feat-holder">
+																			<div class="p-featured">
+																				<a class="p-flink"
+																					href="#"
+																					title="Sony WF-10XM4: Headphones Are Our Absolute Favorite">
+																					<img width="330" height="220"
+																						src="/images/IMG_1654081133120_1654094285551-1654137952101.jpg"
+																						class="featured-img wp-post-image"
+																						alt="" loading="lazy" /> </a>
+																			</div>
+																		</div>
+																		<div class="p-content">
+																			<span class="entry-title h4"> <a
+																					class="p-url"
+																					href="#"
+																					rel="noopener nofollow">Triệt xóa đường dây đánh bạc sử dụng công nghệ cao với thủ đoạn tinh vi</a></span>
+																			<div class="sponsor-meta meta-text">
+																				<div class="sponsor-inner">
+																					<span class="sponsor-icon"><i
+																							class="rbi rbi-notification"></i></span>
+																				
+																						<span class="sponlogo-wrap meta-bold">
+																						<a class="sponsor-link"
+																							href="#"
+																							target="_blank"
+																							rel="noopener nofollow">
+																							<img class="sponsor-brand-default is-logo"
+																								data-mode="default"
+																								src="images/"
+																								width="212" height="52"
+																								alt="" />
+																							<img class="sponsor-brand-light is-logo"
+																								data-mode="dark"
+																								src="images/"
+																								width="212" height="52"
+																								alt="" />
+																						</a>
+																					</span>
+																				</div>
+																				<div class="p-meta has-bookmark">
+																					<div class="meta-inner is-meta">
+																						<span class="meta-el meta-date">
+																							<time class="date published"
+																								datetime="2021-09-04T08:10:00+00:00">21/09/2022</time>
+																						</span>
+																					</div></div>
+																				<span
+																					class="rb-bookmark bookmark-trigger"
+																					data-pid="155"><i
+																						data-title="Save it"
+																						class="rbi rbi-bookmark"></i><i
+																						data-title="Remove"
+																						class="bookmarked-icon rbi rbi-bookmark-fill"></i></span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="p-wrap p-grid p-grid-small-1"
+																		data-pid="1316">
+																		<div class="feat-holder">
+																			<div class="p-featured">
+																				<a class="p-flink"
+																					href="#"
+																					title="Truy nã ''mắt xích'' quan trọng trong đường dây đánh bạc nghìn tỷ">
+																					<img width="330" height="220"
+																						src="/images/Untitled-1.jpg"
+																						class="featured-img wp-post-image"
+																						alt="" loading="lazy" /> </a>
+																			</div>
+																		</div>
+																		<div class="p-content">
+																			<span class="entry-title h4"> <a
+																					class="p-url"
+																					href="#"
+																					rel="bookmark">Truy nã ''mắt xích'' quan trọng trong đường dây đánh bạc nghìn tỷ
+																				</a></span>
+																			<div class="p-meta has-bookmark">
+																				<div class="meta-inner is-meta">
+																					<span class="meta-el meta-date">
+																						<time class="date published"
+																							datetime="2021-09-04T08:10:00+00:00">21/09/2022</time>
+																					</span>
+																				</div>
+																				<span
+																					class="rb-bookmark bookmark-trigger"
+																					data-pid="1316"><i
+																						data-title="Save it"
+																						class="rbi rbi-bookmark"></i><i
+																						data-title="Remove"
+																						class="bookmarked-icon rbi rbi-bookmark-fill"></i></span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li id="menu-item-1588"
+												class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-1588">
+												<a href="#"><span>Bài đăng</span></a>
+												<!-- <ul class="sub-menu">
+													<li id="menu-item-1586"
+														class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1586">
+														<a href="#"><span>Post Layouts</span></a>
+														<ul class="sub-menu">
+															<li id="menu-item-1613"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1613">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/how-sleeping-less-than-7-hours-a-night-can-lead-to-weight-gain/"><span>Standard
+																		1</span></a></li>
+															<li id="menu-item-1618"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1618">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/the-states-braces-for-protests-over-new-covid-rules/"><span>Standard
+																		2</span></a></li>
+															<li id="menu-item-1766"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1766">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/master-mg300-wireless-gaming-headset-review/"><span>Standard
+																		3</span></a></li>
+															<li id="menu-item-1620"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1620">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/can-we-recreate-dinosaurs-from-their-dna/"><span>Standard
+																		4</span></a></li>
+															<li id="menu-item-1621"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1621">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/hidden-ways-to-save-money-that-you-might-be-missing/"><span>Standard
+																		5</span></a></li>
+															<li id="menu-item-1622"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1622">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/benefits-of-yoga-10-ways-your-practice-can-improve-your-life/"><span>Standard
+																		6</span></a></li>
+															<li id="menu-item-1623"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1623">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/national-day-rally-sacrifice-effort-needed-to-preserve-harmony/"><span>Standard
+																		7</span></a></li>
+															<li id="menu-item-1625"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1625">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/david-is-tommy-wiseau-in-the-first-teaser-for-the-amazon-warrior/"><span>Standard
+																		8</span></a></li>
+															<li id="menu-item-1624"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1624">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/what-you-need-to-know-about-covid-delta-variant/"><span>No
+																		Featured</span></a></li>
+														</ul>
+													</li>
+													<li id="menu-item-1589"
+														class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1589">
+														<a href="#"><span>Gallery Layouts</span></a>
+														<ul class="sub-menu">
+															<li id="menu-item-1632"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1632">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/business-casual-the-definitive-guide-for-women-to-be-stylish-at-work/"><span>Layout
+																		1</span></a></li>
+															<li id="menu-item-1631"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1631">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/9-most-beautiful-mountains-of-the-world-for-trekkers-in-this-summer/"><span>Layout
+																		2</span></a></li>
+															<li id="menu-item-1630"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1630">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/hands-on-with-the-iphone-13-pro-max-and-mini/"><span>layout
+																		3</span></a></li>
+														</ul>
+													</li>
+													<li id="menu-item-1590"
+														class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1590">
+														<a href="#"><span>Video Layouts</span></a>
+														<ul class="sub-menu">
+															<li id="menu-item-1634"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1634">
+																<a href="https://foxiz.themeruby.com/news/?p=178"><span>Layout
+																		1</span></a></li>
+															<li id="menu-item-1642"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1642">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/8-mistakes-that-will-ruin-your-weekend-trips-plan/"><span>Layout
+																		2</span></a></li>
+															<li id="menu-item-1633"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1633">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/10-places-you-cant-miss-if-its-your-first-time-in-european/"><span>Layout
+																		3</span></a></li>
+															<li id="menu-item-1643"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1643">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/16-top-of-our-favorite-outdoor-clothing-brands/"><span>Layout
+																		4</span></a></li>
+														</ul>
+													</li>
+													<li id="menu-item-1592"
+														class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1592">
+														<a href="#"><span>Audio Layouts</span></a>
+														<ul class="sub-menu">
+															<li id="menu-item-1644"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1644">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/best-beaches-in-the-uk-for-the-perfect-sandy-getaway/"><span>Layout
+																		1</span></a></li>
+															<li id="menu-item-1646"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1646">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/2021-london-awards-dua-lova-natalia-styles-more-wow-on-red-carpet/"><span>Layout
+																		2</span></a></li>
+															<li id="menu-item-1645"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1645">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/6-reasons-why-you-should-travel-with-friends/"><span>Layout
+																		3</span></a></li>
+															<li id="menu-item-1647"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1647">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/people-in-the-northeast-could-prevent-a-covid-19-by-following-these-measures/"><span>Layout
+																		4</span></a></li>
+														</ul>
+													</li>
+													<li id="menu-item-1587"
+														class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1587">
+														<a href="#"><span>Post Sidebar</span></a>
+														<ul class="sub-menu">
+															<li id="menu-item-1627"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1627">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/what-are-some-ways-to-prevent-the-spread-of-covid-19/"><span>Right
+																		Sidebar</span></a></li>
+															<li id="menu-item-1626"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1626">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/fashionable-summer-accessories-to-dress-up-your-travel-look/"><span>Left
+																		Sidebar</span></a></li>
+															<li id="menu-item-1628"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1628">
+																<a
+																	href="#"><span>No
+																		Sidebar</span></a></li>
+														</ul>
+													</li>
+													<li id="menu-item-1584"
+														class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1584">
+														<a href="#"><span>Review</span></a>
+														<ul class="sub-menu">
+															<li id="menu-item-1611"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1611">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/corsair-hs80-rgb-wireless-gaming-headset-review/"><span>Stars</span></a>
+															</li>
+															<li id="menu-item-1612"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1612">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/apple-imac-m1-review-the-all-in-one-for-almost-everyone/"><span>Scores</span></a>
+															</li>
+															<li id="menu-item-1585"
+																class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1585">
+																<a
+																	href="https://foxiz.themeruby.com/default/corsair-hs80-rgb-wireless-gaming-headset-review/#comments"><span>User
+																		Rating</span></a></li>
+														</ul>
+													</li>
+													<li id="menu-item-1593"
+														class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1593">
+														<a href="#"><span>Content Features</span></a>
+														<ul class="sub-menu">
+															<li id="menu-item-1653"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1653">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/self-driving-cars-everything-you-need-to-know/"><span>Inline
+																		Mailchimp</span></a></li>
+															<li id="menu-item-1639"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1639">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/the-best-street-style-from-paris-fashion-week-spring/"><span>Highlight
+																		Shares</span></a></li>
+															<li id="menu-item-1640"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1640">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/the-best-street-style-from-paris-fashion-week-spring/"><span>Print
+																		Post</span></a></li>
+															<li id="menu-item-1649"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1649">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/18-top-fall-fashion-trends-from-new-york-fashion/"><span>Inline
+																		Related</span></a></li>
+															<li id="menu-item-1650"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1650">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/gout-drug-could-show-promise-in-fighting-covid-19/"><span>Source/Via
+																		Tag</span></a></li>
+															<li id="menu-item-1651"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1651">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/medicaid-expansion-improves-hypertension-and-diabetes-control/"><span>Reading
+																		Indicator</span></a></li>
+															<li id="menu-item-1652"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1652">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/apple-vs-samsung-can-a-good-smartwatch-save-your-life/"><span>Content
+																		Size Resizer</span></a></li>
+														</ul>
+													</li>
+													<li id="menu-item-1629"
+														class="menu-item menu-item-type-post_type menu-item-object-post current-menu-item menu-item-1629">
+														<a href="https://foxiz.themeruby.com/news/blog/how-to-take-the-perfect-instagram-selfie-dos-donts/"
+															aria-current="page"><span>Break Page Selection</span></a>
+													</li>
+													<li id="menu-item-1591"
+														class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1591">
+														<a href="#"><span>Table of Contents</span></a>
+														<ul class="sub-menu">
+															<li id="menu-item-1636"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1636">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/18-top-fall-fashion-trends-from-new-york-fashion/"><span>Full
+																		Width</span></a></li>
+															<li id="menu-item-1637"
+																class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1637">
+																<a
+																	href="https://foxiz.themeruby.com/news/blog/long-term-care-needs-among-retirees-varies-widely-new-research-shows/"><span>Left
+																		Side</span></a></li>
+														</ul>
+													</li>
+													<li id="menu-item-1638"
+														class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1638">
+														<a
+															href="https://foxiz.themeruby.com/news/blog/how-jennifer-aniston-struggles-with-depression-inspired-new-album/"><span>Auto
+																Load Next Posts</span></a></li>
+													<li id="menu-item-1648"
+														class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1648">
+														<a
+															href="https://foxiz.themeruby.com/news/blog/18-top-fall-fashion-trends-from-new-york-fashion/"><span>Reaction
+																Post</span></a></li>
+													<li id="menu-item-1641"
+														class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1641">
+														<a
+															href="https://foxiz.themeruby.com/news/blog/10-pics-that-prove-jennifer-is-a-timeless-beauty/"><span>Sponsored
+																Post</span></a></li>
+												</ul> -->
+											</li>
+											<li id="menu-item-1594"
+												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1594">
+												<a href="#"><span>Sách hướng dẫn nhận biết</span></a>
+												<!-- <ul class="sub-menu">
+													<li id="menu-item-1595"
+														class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-1595">
+														<a href="https://foxiz.themeruby.com/news/blog/"><span>Blog
+																Index</span></a></li>
+													<li id="menu-item-1654"
+														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1654">
+														<a href="https://foxiz.themeruby.com/news/contact/"><span>Contact
+																US</span></a></li>
+													<li id="menu-item-1599"
+														class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1599">
+														<a href="https://foxiz.themeruby.com/news/?s=a"><span>Search
+																Page</span></a></li>
+													<li id="menu-item-1598"
+														class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1598">
+														<a href="https://foxiz.themeruby.com/news/404-page"><span>404
+																Page</span></a></li>
+													<li id="menu-item-1596"
+														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1596">
+														<a href="https://foxiz.themeruby.com/news/customize-interests/"><span>Customize
+																Interests</span></a></li>
+													<li id="menu-item-1597"
+														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1597">
+														<a href="https://foxiz.themeruby.com/news/my-bookmarks/"><span>My
+																Bookmarks</span></a></li>
+												</ul> -->
+											</li>
+
+											<li id="menu-item-1789"
+												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1789">
+												<a
+													href="#"><span>Liên hệ</span></a></li>
+											<li id="menu-item-1789"
+												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1789">
+												<a
+													href="#"><span>Báo cáo tội phạm</span></a></li>
+											
+										</ul>
+									</nav>
+									<div id="s-title-sticky" class="s-title-sticky">
+										<div class="s-title-sticky-left">
+											<span class="sticky-title-label">Reading:</span>
+											<span class="h4 sticky-title">How to Take the Perfect Instagram Selfie: Dos
+												&amp; Don&#8217;ts</span>
+										</div>
+										<div class="sticky-share-list">
+											<div class="t-shared-header meta-text">
+												<i class="rbi rbi-share"></i> <span class="share-label">Share</span>
+											</div>
+											<div class="sticky-share-list-items effect-fadeout is-color"> <a
+													class="share-action share-trigger icon-facebook"
+													href="https://www.facebook.com/sharer.php?u=https%3A%2F%2toiphamcnc.vn%2Fy-kien"
+													data-title="Facebook" data-gravity=n rel="nofollow"><i
+														class="rbi rbi-facebook"></i></a>
+												<a class="share-action share-trigger icon-twitter"
+													href="https://twitter.com/intent/tweet?text=Khảo+sát+ý+kiến&amp;url=https%3A%2F%2toiphamcnc.vn%2Fy-kien"
+													data-title="Twitter" data-gravity=n rel="nofollow">
+													<i class="rbi rbi-twitter"></i></a> <a
+													class="share-action icon-email"
+													href="/cdn-cgi/l/email-protection#023d717760686761763f4a6d75273032766d27303256636967273032766a67273032526770646761762730324b6c7176636570636f27303251676e646b6738273032466d71273032242132313a39273032466d6c24213a303335397671273032404d465b3f4b273032646d776c66273032766a6b712730326370766b616e672730326b6c7667706771766b6c65273032636c66273032766a6d77656a762730326d64273032716a63706b6c652730326b76273032756b766a2730327b6d772c273032416a6761692730326b762730326d7776382730326a76767271382d2d646d7a6b782c766a676f677077607b2c616d6f2d6c6775712d606e6d652d6a6d752f766d2f766369672f766a672f726770646761762f6b6c7176636570636f2f71676e646b672f666d712f666d6c76712d"
+													data-title="Email" data-gravity=n rel="nofollow">
+													<i class="rbi rbi-email"></i></a>
+												<a class="share-action live-tooltip icon-copy copy-trigger" href="#"
+													data-copied="Copied!"
+													data-link="https://ykien.toiphamcnc.vn"
+													rel="nofollow" data-copy="Copy Link" data-gravity=n><i
+														class="rbi rbi-link-o"></i></a>
+												<a class="share-action icon-print" rel="nofollow"
+													href="javascript:if(window.print)window.print()" data-title="Print"
+													data-gravity=n><i class="rbi rbi-print"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="header-mobile" class="header-mobile">
+						<div class="header-mobile-wrap">
+							<div class="mbnav mbnav-center edge-padding">
+								<div class="navbar-left">
+									<div class="mobile-toggle-wrap">
+										<a href="#" class="mobile-menu-trigger"> <span
+												class="burger-icon"><span></span><span></span><span></span></span>
+										</a>
+									</div>
+									<div class="wnav-holder font-resizer">
+										<a href="#" class="font-resizer-trigger"
+											data-title="Resizer"><strong>Aa</strong></a>
+									</div>
+								</div>
+								<div class="navbar-center">
+									<div class="mobile-logo-wrap is-image-logo site-branding">
+										<a href="#" title="Standard News">
+											<img class="logo-default" data-mode="default" height="84" width="204"
+												src="/images/feverlogo_black.png"
+												alt="Standard News"><img class="logo-dark" data-mode="dark" height="84"
+												width="204"
+												src="/images/feverlogo_light.png"
+												alt="Standard News"> </a>
+									</div>
+								</div>
+								<div class="navbar-right">
+									<div class="dark-mode-toggle-wrap">
+										<div class="dark-mode-toggle">
+											<span class="dark-mode-slide">
+												<i class="dark-mode-slide-btn mode-icon-dark"
+													data-title="Switch to Light"><svg class="svg-icon svg-mode-dark"
+														aria-hidden="true" role="img" focusable="false"
+														xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+														<path fill="currentColor" d="M507.681,209.011c-1.297-6.991-7.324-12.111-14.433-12.262c-7.104-0.122-13.347,4.711-14.936,11.643
+ c-15.26,66.497-73.643,112.94-141.978,112.94c-80.321,0-145.667-65.346-145.667-145.666c0-68.335,46.443-126.718,112.942-141.976
+ c6.93-1.59,11.791-7.826,11.643-14.934c-0.149-7.108-5.269-13.136-12.259-14.434C287.546,1.454,271.735,0,256,0
+ C187.62,0,123.333,26.629,74.98,74.981C26.628,123.333,0,187.62,0,256s26.628,132.667,74.98,181.019
+ C123.333,485.371,187.62,512,256,512s132.667-26.629,181.02-74.981C485.372,388.667,512,324.38,512,256
+ C512,240.278,510.546,224.469,507.681,209.011z" />
+													</svg></i>
+												<i class="dark-mode-slide-btn mode-icon-default"
+													data-title="Switch to Dark"><svg class="svg-icon svg-mode-light"
+														aria-hidden="true" role="img" focusable="false"
+														xmlns="http://www.w3.org/2000/svg"
+														viewBox="0 0 232.447 232.447">
+														<path fill="currentColor" d="M116.211,194.8c-4.143,0-7.5,3.357-7.5,7.5v22.643c0,4.143,3.357,7.5,7.5,7.5s7.5-3.357,7.5-7.5V202.3
+ C123.711,198.157,120.354,194.8,116.211,194.8z" />
+														<path fill="currentColor" d="M116.211,37.645c4.143,0,7.5-3.357,7.5-7.5V7.505c0-4.143-3.357-7.5-7.5-7.5s-7.5,3.357-7.5,7.5v22.641
+ C108.711,34.288,112.068,37.645,116.211,37.645z" />
+														<path fill="currentColor" d="M50.054,171.78l-16.016,16.008c-2.93,2.929-2.931,7.677-0.003,10.606c1.465,1.466,3.385,2.198,5.305,2.198
+ c1.919,0,3.838-0.731,5.302-2.195l16.016-16.008c2.93-2.929,2.931-7.677,0.003-10.606C57.731,168.852,52.982,168.851,50.054,171.78
+ z" />
+														<path fill="currentColor" d="M177.083,62.852c1.919,0,3.838-0.731,5.302-2.195L198.4,44.649c2.93-2.929,2.931-7.677,0.003-10.606
+ c-2.93-2.932-7.679-2.931-10.607-0.003l-16.016,16.008c-2.93,2.929-2.931,7.677-0.003,10.607
+ C173.243,62.12,175.163,62.852,177.083,62.852z" />
+														<path fill="currentColor" d="M37.645,116.224c0-4.143-3.357-7.5-7.5-7.5H7.5c-4.143,0-7.5,3.357-7.5,7.5s3.357,7.5,7.5,7.5h22.645
+ C34.287,123.724,37.645,120.366,37.645,116.224z" />
+														<path fill="currentColor" d="M224.947,108.724h-22.652c-4.143,0-7.5,3.357-7.5,7.5s3.357,7.5,7.5,7.5h22.652c4.143,0,7.5-3.357,7.5-7.5
+ S229.09,108.724,224.947,108.724z" />
+														<path fill="currentColor" d="M50.052,60.655c1.465,1.465,3.384,2.197,5.304,2.197c1.919,0,3.839-0.732,5.303-2.196c2.93-2.929,2.93-7.678,0.001-10.606
+ L44.652,34.042c-2.93-2.93-7.679-2.929-10.606-0.001c-2.93,2.929-2.93,7.678-0.001,10.606L50.052,60.655z" />
+														<path fill="currentColor"
+															d="M182.395,171.782c-2.93-2.929-7.679-2.93-10.606-0.001c-2.93,2.929-2.93,7.678-0.001,10.607l16.007,16.008
+ c1.465,1.465,3.384,2.197,5.304,2.197c1.919,0,3.839-0.732,5.303-2.196c2.93-2.929,2.93-7.678,0.001-10.607L182.395,171.782z" />
+														<path fill="currentColor" d="M116.22,48.7c-37.232,0-67.523,30.291-67.523,67.523s30.291,67.523,67.523,67.523s67.522-30.291,67.522-67.523
+ S153.452,48.7,116.22,48.7z M116.22,168.747c-28.962,0-52.523-23.561-52.523-52.523S87.258,63.7,116.22,63.7
+ c28.961,0,52.522,23.562,52.522,52.523S145.181,168.747,116.22,168.747z" />
+													</svg></i>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="mobile-qview">
+								<ul id="menu-mobile-quick-access-1" class="mobile-qview-inner">
+									<li
+										class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1448">
+										<a href="#"><span>Trang chủ</span></a></li>
+									<li
+										class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1542">
+										<a href="#"><span>Tin tức</span></a></li>
+									<li
+										class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1447">
+										<a href="#"><span>Vụ án nổi bật</span></a></li>
+									<li
+										class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1543">
+										<a
+											href="#"><span>Bài đăng</span></a>
+									</li>
+									<li
+										class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1544">
+										<a
+											href="#"><span>Sách hướng dẫn nhận biết</span></a>
+									</li>
+									<li
+										class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-1545">
+										<a
+											href="#"><span>Liên hệ</span></a>
+									</li>
+									<li
+										class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1546">
+										<a
+											href="#"><span>Báo cáo tội phạm</span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="mobile-collapse">
+							<div class="mobile-collapse-holder">
+								<div class="mobile-collapse-inner">
+									<div class="mobile-search-form edge-padding">
+										<div class="header-search-form live-search-form">
+											<span class="h5">Tìm kiếm</span>
+											<div class="live-search-form-outer">
+												<form method="get" action="/"
+													class="rb-search-form">
+													<div class="search-form-inner">
+														<span class="search-icon"><span
+																class="search-icon-svg"></span></span>
+														<span class="search-text"><input type="text" class="field"
+																placeholder="Nhập từ khóa cần tìm" value=""
+																name="s" /></span>
+														<span class="rb-search-submit"><input type="submit"
+																value="search" /> <i class="rbi rbi-cright"></i></span>
+													</div>
+												</form>
+												<span class="live-search-animation rb-loader"></span>
+												<div class="live-search-absolute live-search-response"></div>
+											</div>
+										</div>
+									</div>
+									<nav class="mobile-menu-wrap edge-padding">
+										<ul id="mobile-menu" class="mobile-menu">
+											<li id="menu-item-1832"
+												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1832">
+												<a href="/"><span>Trang chủ</span></a>
+												
+											</li>
+											<li id="menu-item-1547"
+												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1547">
+												<a href="#"><span>Menu</span></a>
+												<ul class="sub-menu">
+													<li id="menu-item-1548"
+														class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-1548">
+														<a
+															href="/"><span>Bản tin chính</span></a>
+													</li>
+													<li id="menu-item-1549"
+														class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1549">
+														<a
+															href="#"><span>Vụ án nổi bật</span></a>
+													</li>
+													<li id="menu-item-1550"
+														class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1550">
+														<a
+															href="#"><span>Tin HOT tuần vừa qua</span></a></li>
+													<li id="menu-item-1551"
+														class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1551">
+														<a
+															href="#"><span>Thủ đoạn phạm tội</span></a>
+													</li>
+													<li id="menu-item-1552"
+														class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1552">
+														<a
+															href="#"><span>Báo cáo tội phạm</span></a></li>
+													<li id="menu-item-1553"
+														class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1553">
+														<a
+															href="#"><span>Tra cứu thông tin TP</span></a></li>
+													<li id="menu-item-1554"
+														class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1554">
+														<a
+															href="#"><span>Cách nhận biết tội phạm</span></a>
+													</li>
+													
+												</ul>
+											</li>
+											<li id="menu-item-1557"
+												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1557">
+												
+												<ul class="sub-menu">
+													<li id="menu-item-1603"
+														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1603">
+														<a href="#"><span>Bài đăng</span></a></li>
+													<li id="menu-item-1604"
+														class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1604">
+														<a href="#"><span>Bài đăng dã lưu</span></a></li>
+												</ul>
+											</li>
+											
+										</ul>
+									</nav>
+									<div class="mobile-collapse-sections edge-padding">
+										<div class="mobile-login">
+											<span class="mobile-login-title h6">Bạn đã có tài khoản ?</span>
+											<a href="#"
+												class="login-toggle is-login is-btn">Đăng nhập</a>
+										</div>
+										<div class="mobile-social-list">
+											<span class="mobile-social-list-title h6">Theo dõi</span>
+											<a class="social-link-facebook" data-title="Facebook" href="https://facebook.com/toiphamcncvn"
+												target="_blank" rel="noopener nofollow"><i
+													class="rbi rbi-facebook"></i></a><a class="social-link-twitter"
+												data-title="Twitter" href="#" target="_blank" rel="noopener nofollow"><i
+													class="rbi rbi-twitter"></i></a><a class="social-link-youtube"
+												data-title="YouTube" href="#" target="_blank" rel="noopener nofollow"><i
+													class="rbi rbi-youtube"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="site-wrap">
+			<div class="single-standard-4 is-sidebar-right sticky-sidebar optimal-line-length">
+				<article id="post-1350"
+					class="post-1350 post type-post status-publish format-standard has-post-thumbnail category-technology tag-design tag-engineering tag-innovation"
+					itemscope itemtype="https://schema.org/Article">
+					<header class="head-blog single-header">
+						<div class="rb-container edge-padding">
+                            <div>
+								<div class="s-feat-holder">
+									<div class="bg_blog breadcrumb-absolute overlay-text">
+									</div>
+									<img width="1200" height="800"
+										src="/images/bg_directory.jpg"
+										class="bg-blog-img featured-img wp-post-image" alt="" />    
+								</div>
+								<style>
+									.single-header-content::before {
+										position: absolute;
+										z-index: -1;
+										bottom: 0;
+										left: 0;
+										display: block;
+										width: 100%;
+										height: 140%;
+										content: '';
+										background: none !important;
+									}
+								</style>
+								<div class="single-header-content overlay-text">			
+									<h1 class="s-title" itemprop="headline">Danh sách đen</h1>									
+									<div class="single-meta">
+										<div class="smeta-in">											
+											<div class="smeta-sec">
+												<div class="single-updated-info meta-text">
+													<a href="/">Trang chủ </a> <span class="xoet-menu" >/</span> <a href="#">Website lừa đảo</a>
+												</div>
+												
+											</div>
+										</div>
+									</div>										
+								</div>
+							</div>
+						</div>
+					</header>
+					<div class="rb-container edge-padding">
+						<div class="container">
+							<div class="s-ct">
+								<button type="submit" id="popup" class="btn btn-primary">Click</button>
+								
+								<div id="modal" class="modal">
+									<div class="modal-content text_center">
+										<div class="modal-header">
+											<div>
+										  		<span id="exit" class="close">&times;</span>
+											</div>
+										  		<h2>KHẢO SÁT THÀNH CÔNG !</h2>
+										</div>
+										<div class="modal-body">
+										  <p>Bạn đã đóng góp một phần không nhỏ trong xây dựng cơ sở dữ liệu về tội phạm mạng.</p>
+										  <p>Cảm ơn bạn đã tham gia bài khảo sát lần này !</p>
+										</div>
+										<div class="modal-footer">
+										  <ul class="modal-ul">
+											<a href="https://www.facebook.com/toiphamcncvn" target="blank" ><li class="rbi rbi-facebook"></li></a>
+											
+											<a href="https://www.facebook.com/toiphamcncvn" target="blank" ><li class="rbi rbi-instagram"></li></a>
+										  </ul>
+										</div>
+									  </div>
+								</div>  
+								</div>							
+							</div>
+						</div>
+					</div>	
+                                                    <!-- <section
+                                                        class="elementor-section elementor-top-section elementor-element elementor-element-10436d6 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                                        data-id="10436d6" data-element_type="section">
+                                                        <div class="elementor-container elementor-column-gap-no">
+                                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2859017"
+                                                                data-id="2859017" data-element_type="column">
+                                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-9fd7a14 elementor-widget elementor-widget-foxiz-heading"
+                                                                        data-id="9fd7a14" data-element_type="widget"
+                                                                        data-widget_type="foxiz-heading.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div id="uid_9fd7a14"
+                                                                                class="block-h heading-layout-c10">
+                                                                                <div class="heading-inner">
+                                                                                    <h3 class="heading-title"><span>Follow US</span>
+                                                                                    </h3>
+                                                                                    <div class="heading-tagline h6"><span
+                                                                                            class="heading-tagline-label">Find US on
+                                                                                            Social Medias</span></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-b91f801 elementor-widget elementor-widget-foxiz-social-follower"
+                                                                        data-id="b91f801" data-element_type="widget"
+                                                                        data-widget_type="foxiz-social-follower.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="sb-social-counter fncount-wrap is-style-1">
+                                                                                <div class="social-follower effect-fadeout">
+                                                                                    <div class="follower-el bg-facebook">
+                                                                                        <a target="_blank"
+                                                                                            href="https://facebook.com/toiphamcncvn"
+                                                                                            class="facebook" title="Facebook"
+                                                                                            rel="noopener nofollow"></a>
+                                                                                        <span class="follower-inner h6">
+                                                                                            <span class="fnicon"><i
+                                                                                                    class="rbi rbi-facebook"></i></span>
+                                                                                            <span class="fnlabel">Facebook</span>
+                                                                                            <span class="text-count">Like</span>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="follower-el bg-twitter">
+                                                                                        <a target="_blank"
+                                                                                            href="#"
+                                                                                            class="twitter" title="Twitter"
+                                                                                            rel="noopener nofollow"></a>
+                                                                                        <span class="follower-inner h6">
+                                                                                            <span class="fnicon"><i
+                                                                                                    class="rbi rbi-twitter"></i></span>
+                                                                                            <span class="fnlabel">Twitter</span>
+                                                                                            <span class="text-count">Follow</span>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="follower-el bg-youtube">
+                                                                                        <a target="_blank" href="#"
+                                                                                            class="youtube" title="Youtube"
+                                                                                            rel="noopener nofollow"></a>
+                                                                                        <span class="follower-inner h6">
+                                                                                            <span class="fnicon"><i
+                                                                                                    class="rbi rbi-youtube"></i></span>
+                                                                                            <span class="fnlabel">Youtube</span>
+                                                                                            <span
+                                                                                                class="text-count">Subscribe</span>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="follower-el bg-telegram">
+                                                                                        <a target="_blank" href="#"
+                                                                                            class="telegram" title="Telegram"
+                                                                                            rel="noopener nofollow"></a>
+                                                                                        <span class="follower-inner h6">
+                                                                                            <span class="fnicon"><i
+                                                                                                    class="rbi rbi-telegram"></i></span>
+                                                                                            <span class="fnlabel">Telegram</span>
+                                                                                            <span class="text-count">Follow</span>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-7b626eb elementor-widget elementor-widget-foxiz-newsletter-3"
+                                                                        data-id="7b626eb" data-element_type="widget"
+                                                                        data-widget_type="foxiz-newsletter-3.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div
+                                                                                class="newsletter-sb newsletter-style is-box-gray-dash">
+                                                                                <div class="newsletter-sb-inner">
+                                                                                    <div class="newsletter-sb-featured"><img
+                                                                                            data-mode="default"
+                                                                                            src="/images/feverlogo_black.png"
+                                                                                            alt="newsletter featured" width="204"
+                                                                                            height="84"><img data-mode="dark"
+                                                                                            src="/images/feverlogo_light.png"
+                                                                                            alt="newsletter featured" width="204"
+                                                                                            height="84"></div>
+                                                                                    <h2 class="newsletter-title">Đăng ký nhận thông báo tin mới
+                                                                                    </h2>
+                                                                                    
+                                                                                    <div class="newsletter-sb-form">
+                                                                                    
+                                                                                        <form>
+                                                                                            <div class="mc4wp-form-fields">
+                                                                                                <div>
+                                                                                                    <input type="email" id="emailsub"
+                                                                                                        placeholder="Địa chỉ Email của bạn"
+                                                                                                        required />
+                                                                                                    <input type="submit" onclick="sub()"
+                                                                                                        value="Đăng ký ngay" />
+                                                                                                </div>
+                                                                                                <div class="agree-to-terms">
+                                                                                                    <input name="Đồng ý với chính sách." id="polii1"
+                                                                                                        type="checkbox" value="1"
+                                                                                                        required="">Tôi đã đọc và đồng ý với chính sách.
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            
+                                                                                        </form>
+                                                                                    </div>
+                                                                                </div> 
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-93fac4a elementor-widget elementor-widget-foxiz-heading"
+                                                                        data-id="93fac4a" data-element_type="widget"
+                                                                        data-widget_type="foxiz-heading.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div id="uid_93fac4a" class="block-h heading-layout-10">
+                                                                                <div class="heading-inner">
+                                                                                    <h5 class="heading-title"><span>Tin nổi bật tuần này</span></h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-40d34d5 elementor-widget elementor-widget-foxiz-hierarchical-1"
+                                                                        data-id="40d34d5" data-element_type="widget"
+                                                                        data-widget_type="foxiz-hierarchical-1.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div id="uid_40d34d5"
+                                                                                class="block-wrap block-hrc hrc-1 ecat-bg-4">
+                                                                                <div class="block-inner">
+                                                                                    <div class="p-wrap p-grid p-grid-1"
+                                                                                        data-pid="152">
+                                                                                        <div class="feat-holder">
+                                                                                            <div class="p-featured">
+                                                                                                <a class="p-flink"
+                                                                                                    href="#"
+                                                                                                    title="Here Are the 4 Cheapest Electric Vehicles You Can Buy">
+                                                                                                    <img width="420" height="280"
+                                                                                                        src="/images/danhbac.jpg"
+                                                                                                        class="featured-img wp-post-image"
+                                                                                                        alt="" loading="lazy" />
+                                                                                                </a>
+                                                                                            </div>
+                                                                                            <div class="p-categories p-top"><a
+                                                                                                    class="p-category category-id-13"
+                                                                                                    href="#"
+                                                                                                    rel="category">Đánh bạc qua mạng</a>
+                                                                                            </div>
+                                                                                            <div class="spacing"></div>
+                                                                                        </div>
+                                                                                        <div class="p-content">
+                                                                                            <h3 class="entry-title"> <a
+                                                                                                    class="p-url"
+                                                                                                    href="#"
+                                                                                                    rel="bookmark">Triệt phá thêm đường dây đánh bạc do Phan Sào Nam cầm đầu</a></h3>
+                                                                                            <div class="p-meta">
+                                                                                                <div class="meta-inner is-meta">
+                                                                                                    <a class="meta-avatar"
+                                                                                                        href="#"><img
+                                                                                                            alt='Ryan Sillers'
+                                                                                                            src='images/te.jpg'
+                                                                                                            srcset='images/te.jpg 2x'
+                                                                                                            class='avatar avatar-44 photo'
+                                                                                                            height='44' width='44'
+                                                                                                            loading='lazy' /></a>
+                                                                                                    <span
+                                                                                                        class="meta-el meta-author">
+                                                                                                        <a
+                                                                                                            href="https://facebook.com/vu.tienanh.1209">Tiến Anh</a>
+                                                                                                    </span>
+                                                                                                    <span class="meta-el meta-date">
+                                                                                                        <time class="date published"
+                                                                                                            datetime="2021-08-31T07:59:52+00:00">21/09/2022</time>
+                                                                                                    </span>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="p-wrap p-list-inline" data-pid="56">
+                                                                                        <span
+                                                                                            class="entry-title h5 is-p-protected"><i
+                                                                                                class="rbi rbi-plus"></i> <a
+                                                                                                class="p-url"
+                                                                                                href="#"
+                                                                                                rel="bookmark">Thi hành xong 93,87% tổng số tiền phải thi hành án vụ án Phan Sào Nam																				</a></span>
+                                                                                    </div>
+                                                                                    <div class="p-wrap p-list-inline"
+                                                                                        data-pid="228">
+                                                                                        <span class="entry-title h5"><i
+                                                                                                class="rbi rbi-plus"></i> <a
+                                                                                                class="p-url"
+                                                                                                href="#"
+                                                                                                rel="bookmark">Xét xử vụ đánh bạc nghìn tỷ: Công bố bản cáo trạng truy tố 92 bị cáo</a></span>
+                                                                                    </div>
+                                                                                    <div class="p-wrap p-list-inline"
+                                                                                        data-pid="237">
+                                                                                        <span class="entry-title h5"><i
+                                                                                                class="rbi rbi-plus"></i> <a
+                                                                                                class="p-url"
+                                                                                                href="#"
+                                                                                                rel="bookmark">Hủy quyết định giảm thời gian chấp hành án đối với Phan Sào Nam</a></span>
+                                                                                    </div>
+                                                                                    <div class="p-wrap p-list-inline"
+                                                                                        data-pid="155">
+                                                                                        <span class="entry-title h5"><i
+                                                                                                class="rbi rbi-plus"></i> <a
+                                                                                                class="p-url"
+                                                                                                href="#"
+                                                                                                rel="noopener nofollow">
+                                                                                                Cảnh giác với lừa đảo công nghệ cao</a></span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                
+                                                                    <div class="elementor-element elementor-element-bce9725 elementor-widget elementor-widget-foxiz-heading"
+                                                                        data-id="bce9725" data-element_type="widget"
+                                                                        data-widget_type="foxiz-heading.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div id="uid_bce9725" class="block-h heading-layout-10">
+                                                                                <div class="heading-inner">
+                                                                                    <h5 class="heading-title"><span>Tình trạng COVID - 19</span></h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-e5a4e71 elementor-invisible elementor-widget elementor-widget-foxiz-covid-data"
+                                                                        data-id="e5a4e71" data-element_type="widget"
+                                                                        data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}"
+                                                                        data-widget_type="foxiz-covid-data.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="block-covid-data">
+                                                                                <div class="data-inner">
+                                                                                    <div class="data-item data-confirmed">
+                                                                                        <p class="description-text">
+                                                                                            <span class="data-item-icon"><svg
+                                                                                                    class="svg-icon svg-chart"
+                                                                                                    aria-hidden="true" role="img"
+                                                                                                    focusable="false"
+                                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                                    viewBox="0 0 512 512">
+                                                                                                    <path fill="currentColor" d="M460.8,25.6c-28.22-0.051-51.139,22.785-51.19,51.006c-0.024,13.301,5.14,26.088,14.394,35.642l-93.542,187.051
+             c-2.05-0.34-4.119-0.551-6.195-0.631c-6.61,0.013-13.154,1.312-19.268,3.823l-72.619-81.664
+             c4.239-7.495,6.495-15.948,6.554-24.559c0-28.277-22.923-51.2-51.2-51.2s-51.2,22.923-51.2,51.2
+             c0.05,12.222,4.511,24.015,12.561,33.212L60.348,384.922c-3.016-0.58-6.077-0.889-9.148-0.922C22.923,384,0,406.923,0,435.2
+             s22.923,51.2,51.2,51.2s51.2-22.923,51.2-51.2c-0.05-12.222-4.511-24.015-12.561-33.212l88.747-155.443
+             c9.527,1.882,19.399,0.872,28.348-2.901l72.619,81.664c-4.215,7.501-6.448,15.954-6.485,24.559
+             c-0.085,28.277,22.768,51.269,51.045,51.354c28.277,0.085,51.269-22.768,51.354-51.045c0.04-13.34-5.128-26.169-14.404-35.756
+             l93.542-187.051c2.05,0.34,4.119,0.551,6.195,0.631c28.277,0,51.2-22.923,51.2-51.2S489.077,25.6,460.8,25.6z M51.2,452.267
+             c-9.426,0-17.067-7.641-17.067-17.067s7.641-17.067,17.067-17.067s17.067,7.641,17.067,17.067S60.626,452.267,51.2,452.267z
+              M187.733,213.333c-9.426,0-17.067-7.641-17.067-17.067s7.641-17.067,17.067-17.067s17.067,7.641,17.067,17.067
+             S197.159,213.333,187.733,213.333z M324.267,366.933c-9.426,0-17.067-7.641-17.067-17.067c0-9.426,7.641-17.067,17.067-17.067
+             s17.067,7.641,17.067,17.067C341.333,359.292,333.692,366.933,324.267,366.933z M460.8,93.867
+             c-9.426,0-17.067-7.641-17.067-17.067s7.641-17.067,17.067-17.067c9.426,0,17.067,7.641,17.067,17.067
+             S470.226,93.867,460.8,93.867z" />
+                                                                                                </svg></span>Đã mắc
+                                                                                        </p>
+                                                                                        <p class="data-item-value h5">611.71M</p>
+                                                                                    </div>
+                                                                                    <div class="data-item data-death">
+                                                                                        <p class="description-text">
+                                                                                            <span class="data-item-icon"><svg
+                                                                                                    class="svg-icon svg-chart"
+                                                                                                    aria-hidden="true" role="img"
+                                                                                                    focusable="false"
+                                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                                    viewBox="0 0 512 512">
+                                                                                                    <path fill="currentColor" d="M460.8,25.6c-28.22-0.051-51.139,22.785-51.19,51.006c-0.024,13.301,5.14,26.088,14.394,35.642l-93.542,187.051
+             c-2.05-0.34-4.119-0.551-6.195-0.631c-6.61,0.013-13.154,1.312-19.268,3.823l-72.619-81.664
+             c4.239-7.495,6.495-15.948,6.554-24.559c0-28.277-22.923-51.2-51.2-51.2s-51.2,22.923-51.2,51.2
+             c0.05,12.222,4.511,24.015,12.561,33.212L60.348,384.922c-3.016-0.58-6.077-0.889-9.148-0.922C22.923,384,0,406.923,0,435.2
+             s22.923,51.2,51.2,51.2s51.2-22.923,51.2-51.2c-0.05-12.222-4.511-24.015-12.561-33.212l88.747-155.443
+             c9.527,1.882,19.399,0.872,28.348-2.901l72.619,81.664c-4.215,7.501-6.448,15.954-6.485,24.559
+             c-0.085,28.277,22.768,51.269,51.045,51.354c28.277,0.085,51.269-22.768,51.354-51.045c0.04-13.34-5.128-26.169-14.404-35.756
+             l93.542-187.051c2.05,0.34,4.119,0.551,6.195,0.631c28.277,0,51.2-22.923,51.2-51.2S489.077,25.6,460.8,25.6z M51.2,452.267
+             c-9.426,0-17.067-7.641-17.067-17.067s7.641-17.067,17.067-17.067s17.067,7.641,17.067,17.067S60.626,452.267,51.2,452.267z
+              M187.733,213.333c-9.426,0-17.067-7.641-17.067-17.067s7.641-17.067,17.067-17.067s17.067,7.641,17.067,17.067
+             S197.159,213.333,187.733,213.333z M324.267,366.933c-9.426,0-17.067-7.641-17.067-17.067c0-9.426,7.641-17.067,17.067-17.067
+             s17.067,7.641,17.067,17.067C341.333,359.292,333.692,366.933,324.267,366.933z M460.8,93.867
+             c-9.426,0-17.067-7.641-17.067-17.067s7.641-17.067,17.067-17.067c9.426,0,17.067,7.641,17.067,17.067
+             S470.226,93.867,460.8,93.867z" />
+                                                                                                </svg></span>Tử vong
+                                                                                        </p>
+                                                                                        <p class="data-item-value h5">6.53M</p>
+                                                                                    </div>
+                                                                                    <svg class="svg-icon svg-virus"
+                                                                                        aria-hidden="true" role="img"
+                                                                                        focusable="false" viewBox="0 0 512 512"
+                                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                                        <path fill="currentColor"
+                                                                                            d="m480 224c-11.82 0-22.16 6.44-27.7 16h-29.06c-3.26-34.338-16.889-65.697-37.727-90.886l20.612-20.612c10.603 2.854 22.516.104 30.894-8.261 12.48-12.48 12.48-32.78 0-45.26s-32.78-12.48-45.26 0c-8.349 8.359-11.109 20.226-8.261 30.894l-20.612 20.612c-25.189-20.838-56.548-34.467-90.886-37.727v-29.06c9.56-5.54 16-15.88 16-27.7 0-17.65-14.35-32-32-32s-32 14.35-32 32c0 11.82 6.44 22.16 16 27.7v29.06c-34.338 3.26-65.697 16.889-90.886 37.727l-20.612-20.612c2.848-10.669.087-22.536-8.261-30.894-12.48-12.48-32.78-12.48-45.26 0s-12.48 32.78 0 45.26c8.374 8.36 20.286 11.117 30.894 8.261l20.612 20.612c-20.838 25.189-34.467 56.548-37.727 90.886h-29.06c-5.54-9.56-15.88-16-27.7-16-17.65 0-32 14.35-32 32s14.35 32 32 32c11.82 0 22.16-6.44 27.7-16h29.06c3.26 34.338 16.889 65.697 37.727 90.886l-20.612 20.612c-10.668-2.848-22.536-.087-30.894 8.261-12.48 12.48-12.48 32.78 0 45.26 12.503 12.503 32.803 12.457 45.26 0 8.349-8.359 11.109-20.226 8.261-30.894l20.612-20.612c25.189 20.838 56.548 34.467 90.886 37.727v29.06c-9.56 5.54-16 15.88-16 27.7 0 17.65 14.35 32 32 32s32-14.35 32-32c0-11.82-6.44-22.16-16-27.7v-29.06c34.338-3.26 65.697-16.889 90.886-37.727l20.612 20.612c-2.848 10.668-.087 22.536 8.261 30.894 12.457 12.457 32.757 12.503 45.26 0 12.48-12.48 12.48-32.78 0-45.26-8.359-8.349-20.226-11.109-30.894-8.261l-20.612-20.612c20.838-25.189 34.467-56.548 37.727-90.886h29.06c5.54 9.56 15.88 16 27.7 16 17.65 0 32-14.35 32-32s-14.35-32-32-32zm-277 24c-15.44 0-28-12.56-28-28s12.56-28 28-28 28 12.56 28 28-12.56 28-28 28zm69 96c-17.65 0-32-14.35-32-32s14.35-32 32-32 32 14.35 32 32-14.35 32-32 32zm56-112c-13.23 0-24-10.77-24-24s10.77-24 24-24 24 10.77 24 24-10.77 24-24 24z" />
+                                                                                    </svg>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-4f35842 elementor-widget elementor-widget-text-editor"
+                                                                        data-id="4f35842" data-element_type="widget"
+                                                                        data-widget_type="text-editor.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <span class="is-meta">Xem thêm:</span><a
+                                                                                class="h6"
+                                                                                style="border-bottom: 2px solid var(--global-color);margin-left: 7px"
+                                                                                href="https://covid19.who.int/"
+                                                                                target="_blank">Covid-19 Statistics</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                        </div>-->
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+				<div class="single-footer rb-container edge-padding">
+				</div>
+			</div>
+		</div>
+		<aside class="rb-section fw-widget top-footer edge-padding">
+			<div class="top-footer-inner">
+			</div>
+		</aside>
+		<footer class="footer-wrap rb-section footer-etemplate">
+			<div data-elementor-type="wp-post" data-elementor-id="1714" class="elementor elementor-1714">
+				<section
+					class="elementor-section elementor-top-section elementor-element elementor-element-1661d9e elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+					data-id="1661d9e" data-element_type="section"
+					data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="elementor-container elementor-column-gap-no">
+						<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fc2589e"
+							data-id="fc2589e" data-element_type="column">
+							<div class="elementor-widget-wrap elementor-element-populated">
+								<section
+									class="elementor-section elementor-inner-section elementor-element elementor-element-a4c2b6e elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+									data-id="a4c2b6e" data-element_type="section">
+									<div class="elementor-container elementor-column-gap-custom">
+										<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-c3e6ca9"
+											data-id="c3e6ca9" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-4679f62 elementor-widget elementor-widget-foxiz-heading"
+													data-id="4679f62" data-element_type="widget"
+													data-widget_type="foxiz-heading.default">
+													<div class="elementor-widget-container">
+														<div id="uid_4679f62" class="block-h heading-layout-7">
+															<div class="heading-inner">
+																<h3 class="heading-title"><span>Bảng tin Tội phạm Công nghệ cao</span></h3>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-1dee8ef"
+											data-id="1dee8ef" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-77c86b8 elementor-widget elementor-widget-foxiz-quick-links"
+													data-id="77c86b8" data-element_type="widget"
+													data-widget_type="foxiz-quick-links.default">
+													<div class="elementor-widget-container">
+														<div id="uid_77c86b8"
+															class="block-wrap block-qlinks qlinks-layout-1 qlinks-underline">
+															<div class="block-qlinks-inner">
+																<div class="qlinks-content">
+																	<ul>
+																		<li class="qlink h5"><a
+																			href="#">Đang truy cập hiện tại</a>&nbsp;<span id="nowuser"></span></li>
+
+																	<li class="qlink h5"><a
+																			href="#">Người dùng đã truy cập</a>&nbsp;<span id="totaluser"></span></li>
+																		
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+								<div class="elementor-element elementor-element-2cf3c34 elementor-widget-divider--separator-type-pattern elementor-widget-divider--no-spacing elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+									data-id="2cf3c34" data-element_type="widget" data-widget_type="divider.default">
+									<div class="elementor-widget-container">
+										<div class="elementor-divider"
+											style="--divider-pattern-url: url(&quot;data:image/svg+xml,%3Csvg xmlns=&#039;http://www.w3.org/2000/svg&#039; preserveAspectRatio=&#039;xMidYMid meet&#039; overflow=&#039;visible&#039; height=&#039;100%&#039; viewBox=&#039;0 0 120 26&#039; fill=&#039;black&#039; stroke=&#039;none&#039;%3E%3Cpolygon points=&#039;0,14.4 0,21 11.5,12.4 21.3,20 30.4,11.1 40.3,20 51,12.4 60.6,20 69.6,11.1 79.3,20 90.1,12.4 99.6,20 109.7,11.1 120,21 120,14.4 109.7,5 99.6,13 90.1,5 79.3,14.5 71,5.7 60.6,12.4 51,5 40.3,14.5 31.1,5 21.3,13 11.5,5 	&#039;/%3E%3C/svg%3E&quot;);">
+											<span class="elementor-divider-separator">
+											</span>
+										</div>
+									</div>
+								</div>
+								<section
+									class="elementor-section elementor-inner-section elementor-element elementor-element-d064a02 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+									data-id="d064a02" data-element_type="section">
+									<div class="elementor-container elementor-column-gap-custom">
+										<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-076873c"
+											data-id="076873c" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-66d3e7d elementor-widget elementor-widget-foxiz-heading"
+													data-id="66d3e7d" data-element_type="widget"
+													data-widget_type="foxiz-heading.default">
+													<div class="elementor-widget-container">
+														<div id="uid_66d3e7d" class="block-h heading-layout-10">
+															<div class="heading-inner">
+																<h4 class="heading-title"><span>About US</span></h4>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-f68205f elementor-widget elementor-widget-wp-widget-widget-social-icon"
+													data-id="f68205f" data-element_type="widget"
+													data-widget_type="wp-widget-widget-social-icon.default">
+													<div class="elementor-widget-container">
+														<div class="about-content-wrap">
+															<div class="about-bio">
+																Học viên Học viện Cảnh sát nhân dân
+															</div>
+															<div class="social-icon-wrap clearfix tooltips-n">
+																<a class="social-link-facebook" data-title="Facebook"
+																	href="#" target="_blank" rel="noopener nofollow"><i
+																		class="rbi rbi-facebook"></i></a><a
+																	class="social-link-twitter" data-title="Twitter"
+																	href="#" target="_blank" rel="noopener nofollow"><i
+																		class="rbi rbi-twitter"></i></a><a
+																	class="social-link-pinterest" data-title="Pinterest"
+																	href="#" target="_blank" rel="noopener nofollow"><i
+																		class="rbi rbi-pinterest"></i></a><a
+																	class="social-link-instagram" data-title="Instagram"
+																	href="#" target="_blank" rel="noopener nofollow"><i
+																		class="rbi rbi-instagram"></i></a><a
+																	class="social-link-linkedin" data-title="LinkedIn"
+																	href="#" target="_blank" rel="noopener nofollow"><i
+																		class="rbi rbi-linkedin"></i></a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-2dfc7ca"
+											data-id="2dfc7ca" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-6187af4 elementor-widget elementor-widget-wp-widget-nav_menu"
+													data-id="6187af4" data-element_type="widget"
+													data-widget_type="wp-widget-nav_menu.default">
+													<div class="elementor-widget-container">
+														<h5>Menu</h5>
+														<div class="menu-quick-link-container">
+															<ul id="menu-quick-link" class="menu">
+																<li id="menu-item-1608"
+																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1608">
+																	<a
+																		href="#"><span>Tin yêu thích</span></a></li>
+																<li id="menu-item-1610"
+																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1610">
+																	<a
+																		href="#><span>Bảng tin<span
+																				class="menu-sub-title meta-text">New</span></span></a>
+																</li>
+																<li id="menu-item-1609"
+																	class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-1609">
+																	<a href="https://facebook.com/vu.tienanh.1209"><span>Liên hệ</span></a></li>
+																<li id="menu-item-1617"
+																	class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-1617">
+																	<a href="#"><span>Báo cáo tội phạm
+																			</span></a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-b12cd2f"
+											data-id="b12cd2f" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-c9281ab elementor-widget elementor-widget-wp-widget-nav_menu"
+													data-id="c9281ab" data-element_type="widget"
+													data-widget_type="wp-widget-nav_menu.default">
+													<div class="elementor-widget-container">
+														<h5>Top Categories</h5>
+														<div class="menu-top-categories-container">
+															<ul id="menu-top-categories" class="menu">
+																<li id="menu-item-1722"
+																	class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1722">
+																	<a
+																		href="#"><span>Bảng tin vụ án mới</span></a></li>
+																<li id="menu-item-1723"
+																	class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1723">
+																	<a
+																		href="#"><span>Báo cáo tội phạm<span
+																				class="menu-sub-title meta-text">Hot</span></span></a>
+																</li>
+																<li id="menu-item-1724"
+																	class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1724">
+																	<a
+																		href="#"><span>Sách tìm hiểu phòng ngừa tội phạm CNC</span></a>
+																</li>
+																<li id="menu-item-1725"
+																	class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1725">
+																	<a
+																		href="#"><span>Tra cứu thông tin Ngân hàng của đối tượng lừa đảo</span></a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-caed948"
+											data-id="caed948" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-1a63dfa elementor-widget elementor-widget-foxiz-heading"
+													data-id="1a63dfa" data-element_type="widget"
+													data-widget_type="foxiz-heading.default">
+													<div class="elementor-widget-container">
+														<div id="uid_1a63dfa" class="block-h heading-layout-10">
+															<div class="heading-inner">
+																<h4 class="heading-title"><span>Đăng ký nhận tin mới</span></h4>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-470a02c elementor-widget elementor-widget-text-editor"
+													data-id="470a02c" data-element_type="widget"
+													data-widget_type="text-editor.default">
+													<div class="elementor-widget-container">
+														
+														
+														<form class="mc4wp-form mc4wp-form-1713"
+															>
+															<div class="mc4wp-form-fields">
+																<div>
+																	<input type="email" id="emailsub1"
+																		placeholder="Địa chỉ Email của bạn" required />
+																	<input type="submit" onclick="sub()" value="Đăng ký" />
+																</div>
+																<div class="agree-to-terms">
+																	<input name="AGREE_TO_TERMS" id="polii2" type="checkbox"
+																		value="1" required="">Tôi đã đọc và đồng ý chính sách.
+																</div>
+															</div>
+															<div class="mc4wp-response"></div>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="footer-inner">
+				<div class="footer-copyright">
+					<div class="rb-container edge-padding">
+						<div class="copyright-inner">
+							<div class="copyright">
+								<p>© Bản quyền thuộc về Vũ Tiến Anh. Khi sử dụng lại thông tin, đề nghị ghi rõ nguồn "Bảng tin tội phạm sử dụng Công nghệ cao".</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+
+	<aside id="bookmark-toggle-info" class="bookmark-info edge-padding">
+		<div class="bookmark-holder">
+			<div class="bookmark-featured"></div>
+			<div class="bookmark-inner">
+				<span class="bookmark-title h5"></span>
+				<span class="bookmark-desc"></span>
+			</div>
+		</div>
+	</aside>
+	<aside id="follow-toggle-info" class="bookmark-info edge-padding">
+		<div class="bookmark-holder">
+			<span class="bookmark-desc"></span>
+		</div>
+	</aside>
+	<aside id="bookmark-remove-info" class="bookmark-info edge-padding">
+		<div class="bookmark-remove-holder bookmark-holder">
+			<p>Removed from reading list</p>
+			<a href="#" id="bookmark-undo" class="bookmark-undo h4">Undo</a>
+		</div>
+	</aside>
+	<div id="amp-mobile-version-switcher" hidden>
+		<a rel=""
+			href="#">
+			Go to mobile version </a>
+	</div>
+	<div id="rb-user-popup-form" class="rb-user-popup-form mfp-animation mfp-hide">
+		<div class="logo-popup-outer">
+			<div class="logo-popup">
+				login<div class="-popup-header">
+					<div class="logo-popup-logo">
+						<img src="/images/login.webp" alt=""
+							height="200" width="200">
+					</div>
+					<span class="logo-popup-heading h3">Welcome Back!</span>
+					<p class="logo-popup-description is-meta">Sign in to your account</p>
+				</div>
+				<div class="user-form">
+					<form name="popup-form" id="popup-form" action="#"
+						method="post">
+						<p class="login-username">
+							<label for="user_login">Username or Email Address</label>
+							<input type="text" name="log" id="user_login" autocomplete="username" class="input" value=""
+								size="20" />
+						</p>
+						<p class="login-password">
+							<label for="user_pass">Password</label>
+							<input type="password" name="pwd" id="user_pass" autocomplete="current-password"
+								class="input" value="" size="20" />
+						</p>
+						<p class="login-remember"><label><input name="rememberme" type="checkbox" id="rememberme"
+									value="forever" /> Remember Me</label></p>
+						<p class="login-submit">
+							<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary"
+								value="Sign In" />
+							<input type="hidden" name="redirect_to"
+								value="#" />
+						</p>
+					</form>
+				</div>
+				<div class="user-form-footer is-meta">
+					<a href="#">Lost your
+						password?</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	
+	<script src="/js/form.js"></script>
+	<script src="/js/time.js"></script>
+	<link rel='stylesheet' id='elementor-post-1752-css'
+		href='/css/autoptimize_single_bb6cfb838faed070ceedaf3afa7de8b4.css?ver=1649915856'
+		media='all' />
+	<script id='foxiz-core-js-extra'>
+		var foxizCoreParams = { "ajaxurl": "https:\/\/ykien.toiphamcnc.vn", "darkModeID": "" };
 	</script>
+	<script id='foxiz-global-js-extra'>
+		var foxizParams = { "ajaxurl": "https:\/\/ykien.toiphamcnc.vn", "twitterName": "Standard News", "highlightShares": "1", "highlightShareFacebook": "1", "highlightShareTwitter": "1", "highlightShareReddit": "1", "sliderSpeed": "5000", "sliderEffect": "slide", "sliderFMode": "1" };
+		var uid_notification = { "uuid": "uid_notification", "name": "list_small_2", "order": "post_date", "posts_per_page": "5", "pagination": "infinite_scroll", "entry_meta": ["category"], "sponsor_meta": "1", "middle_mode": "1", "paged": "1", "page_max": "16" };
+	</script>
+	<script id='elementor-frontend-js-before'>
+		var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Extra", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Extra", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } } }, "version": "3.6.2", "is_static": false, "experimentalFeatures": { "e_dom_optimization": true, "e_optimized_assets_loading": true, "e_optimized_css_loading": true, "a11y_improvements": true, "e_import_export": true, "additional_custom_breakpoints": true, "e_hidden_wordpress_widgets": true, "landing-pages": true, "elements-color-picker": true, "favorite-widgets": true, "admin-top-bar": true }, "urls": { "assets": "https:\/\/toiphamcnc.vn\/news\/wp-content\/plugins\/elementor\/assets\/" }, "settings": { "page": [], "editorPreferences": [] }, "kit": { "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 1350, "title": "How%20to%20Take%20the%20Perfect%20Instagram%20Selfie%3A%20Dos%20%26%20Don%27ts%20%E2%80%93%20Standard%20News", "excerpt": "", "featuredImage": "https:\/\/toiphamcnc.vn\/news\/wp-content\/uploads\/2021\/10\/n3-1024x683.jpg" } };
+	</script>
+	<script defer
+		src="/js/autoptimize_b109959c37006b718bd147a6f6363d71.js"></script>
+	<!-- Code injected by live-server -->
+	<script>
+		// <![CDATA[  <-- For SVG support
+		if ('WebSocket' in window) {
+			(function () {
+				function refreshCSS() {
+					var sheets = [].slice.call(document.getElementsByTagName("link"));
+					var head = document.getElementsByTagName("head")[0];
+					for (var i = 0; i < sheets.length; ++i) {
+						var elem = sheets[i];
+						var parent = elem.parentElement || head;
+						parent.removeChild(elem);
+						var rel = elem.rel;
+						if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+							var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+							elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+						}
+						parent.appendChild(elem);
+					}
+				}
+				var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+				var address = protocol + window.location.host + window.location.pathname + '/ws';
+				var socket = new WebSocket(address);
+				socket.onmessage = function (msg) {
+					if (msg.data == 'reload') window.location.reload();
+					else if (msg.data == 'refreshcss') refreshCSS();
+				};
+				if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+					console.log('Live reload enabled.');
+					sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+				}
+			})();
+		}
+		else {
+			console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+		}
+	// ]]>
+	</script>
+</body>
+
+</html>
