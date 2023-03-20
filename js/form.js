@@ -20,8 +20,7 @@ function Send() {
        xhr.open("POST", 'https://docs.google.com/forms/d/e/1FAIpQLSciiLOdIRudNyArrwSwnMgETL6yhaHZXZ5w2v8clHJLWb7dow/formResponse', true);
        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
        xhr.send(queryString);
-       alert('Gửi khảo sát thành công!')
-       
+       alert('Gửi khảo sát thành công !')
 }
 
 function sub() {
@@ -47,3 +46,5 @@ function sub() {
             alert('Vui lòng tích vào ô đồng ý.')
         }
 }
+
+
