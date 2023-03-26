@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function auto() {
     darkauto();
     sunmoon();
@@ -6,8 +5,7 @@ function auto() {
 }
 function livetime() {
     const date = new Date();
-
-=======
+}
 window.onload = function auto() {
     sunmoon();
     livetime();
@@ -15,14 +13,12 @@ window.onload = function auto() {
 }
 function livetime() {
     let date = new Date();
->>>>>>> 53f326cc5ebef27a57aa67ff283f20e5e15deced
     let day = date.getDate();
     let month = date.getMonth() + 1;
     let year = date.getFullYear();
     let minutes = date.getMinutes();
     let hours = date.getHours();
     let seconds = date.getSeconds();
-<<<<<<< HEAD
 
     let currentTime = `${hours}:${minutes}:${seconds} - ${day}/${month}/${year}`;
 
@@ -38,7 +34,6 @@ function darkauto() {
     }
     else if (hours >= 00 && hours <= 6){
         document.querySelector('.dark-mode-slide-btn').click();
-=======
     let todayi = date.getDay();
     if (todayi == 0) {
         todayis.innerHTML = "CN";
@@ -67,62 +62,50 @@ function darkauto() {
     else if (todayi == 6) {
         todayis.innerHTML = "Thứ 7";
         
->>>>>>> 53f326cc5ebef27a57aa67ff283f20e5e15deced
     }
     else {
 
     }
-<<<<<<< HEAD
 }
-=======
     let currentTime = `${hours}:${minutes}:${seconds} - ${todayis.innerHTML}, ${day}/${month}/${year}`;
 
     document.getElementById('livetime').innerHTML = currentTime;
 
 }
 setInterval(livetime, 1000);   
->>>>>>> 53f326cc5ebef27a57aa67ff283f20e5e15deced
 
 function sunmoon() {
     const date = new Date();
     let hours = date.getHours();
-<<<<<<< HEAD
     if (hours >= 19 && hours <= 6) {
         document.querySelector('.moon').style.display = 'inline';
         document.querySelector('.sun').style.display = 'none';
-=======
     if (hours >= 19 || hours <= 6) {
         document.querySelector('.moon').style.display = 'inline';
         document.querySelector('.sun').style.display = 'none';
         document.querySelector('.dark-mode-slide-btn').click();
         console.log('>19');
->>>>>>> 53f326cc5ebef27a57aa67ff283f20e5e15deced
     }
     else if (hours >= 00 && hours <= 6){
         document.querySelector('.moon').style.display = 'inline';
         document.querySelector('.sun').style.display = 'none';
-<<<<<<< HEAD
-=======
         document.querySelector('.dark-mode-slide-btn').click();
         console.log('>0');
->>>>>>> 53f326cc5ebef27a57aa67ff283f20e5e15deced
     }
     else {
         document.querySelector('.moon').style.display = 'none';
         document.querySelector('.sun').style.display = 'inline';
     }
 
-}
-<<<<<<< HEAD
+}}
 setInterval(sunmoon(), 10000);  
-=======
 setInterval(sunmoon(), 10000);  
 
 
 function weather() {
     const APP_ID = 'ff532977349290d86ac2bc3243a8ca5a';
-    const DEFAULT_VALUE = '--';
-    const searchInput = document.querySelector('#search-input');
+    const DEFAULT_VALUE = '';
+    // const searchInput = document.querySelector('#search-input');
     const cityName = document.querySelector('.city-name');
     const weatherState_today = document.querySelector('.weather-qstate');
     const weatherIcon = document.querySelector('.weather-icon');
@@ -199,7 +182,7 @@ function weather() {
     }
     // const sunrise = document.querySelector('.sunrise');
     // const sunset = document.querySelector('.sunset');
-        fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${searchInput.value}&appid=${APP_ID}&units=metric&lang=vi&cnt=5`)
+        fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Hanoi&appid=${APP_ID}&units=metric&lang=vi&cnt=5`)
             .then(async res => {
                 const data = await res.json();
                 cityName.innerHTML = data.city.name || DEFAULT_VALUE;
@@ -219,5 +202,5 @@ function weather() {
                 temperature_min.innerHTML = Math.round(data.list[0].main.temp_min) || DEFAULT_VALUE;
             
     });
+    console.log()
 }
->>>>>>> 53f326cc5ebef27a57aa67ff283f20e5e15deced
